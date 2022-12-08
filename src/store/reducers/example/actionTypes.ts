@@ -1,0 +1,1 @@
+export const SET_EXAMPLE = 'EXAMPLE/SET_EXAMPLE';

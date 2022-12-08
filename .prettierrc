@@ -1,0 +1,18 @@
+{
+    "semi": true,
+    "useTabs": true,
+    "printWidth": 100,
+    "jsxSingleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "singleAttributePerLine": true,
+    "importOrder": [
+        
+    ],
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "importOrderSeparation": false,
+    "tabWidth": 4
+}

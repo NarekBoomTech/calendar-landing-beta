@@ -1,0 +1,39 @@
+.button{
+    cursor: pointer;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 32px 12px 32px;
+    letter-spacing: -0.215833px;
+    border-radius: 8px;
+    height: 42px;
+}
+
+.dark{
+    background: #3E1AAB;
+    color: #FFFFFF;
+    border: none;
+}
+.light{
+    background: #FFFFFF;
+    border:  1px solid #3E1AAA; 
+    color: #3E1AAA;
+}
+
+.large{
+    font-family: 'Inter';
+    font-weight: 500;
+    width: 100%;
+}
+.medium{
+    width:  144px;
+    font-size: 16px;
+    line-height: 18px; 
+}
+.small{
+    padding: 8px 22px 8px 22px;
+    width: 114px;
+    height: 32px;
+} 
