@@ -1,0 +1,30 @@
+.menu__section__component__wrapper, .menu__section__component__wrapper__mobile{
+    flex-direction: column;
+    width: 284px;
+    height: 100px;
+    display: flex;
+}
+.menu__section__component__wrapper__mobile{
+    display: flex;
+    height: auto;
+}
+.menu__section__component__wrapper>div, .menu__section__component__wrapper__mobile>div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 18px;
+}
+.menu__section__component__wrapper>p{
+    font-weight: 300;
+    font-size: 14px;
+    color: #162D3D;
+    letter-spacing: 0.02em;
+}
+.field__decription{
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #162D3D;
+    padding-left: 32px;
+    font-family: 'Inter'; 
+}

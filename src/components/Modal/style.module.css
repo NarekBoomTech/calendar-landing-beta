@@ -1,0 +1,50 @@
+.modal {
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.modal__button,
+.modal__iframe {
+	position: absolute;
+	border: none;
+}
+
+.modal__button {
+	line-height: 44px;
+	right: 40px;
+	top: 30px;
+	font-size: 36px;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+.modal__iframe,
+.modal__container,
+.modal {
+	width: 100%;
+}
+
+.modal__iframe {
+	padding: 20px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 900px;
+	height: 500px;
+}
+
+@media (max-width: 768px) {
+	.modal__iframe {
+		height: 300px;
+	}
+
+	.modal__button {
+		right: 10px;
+		top: 10px;
+	}
+}

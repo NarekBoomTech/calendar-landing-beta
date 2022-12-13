@@ -16,7 +16,8 @@ type T_Props = {};
 const Header: FC<T_Props> = () => {
 	const device = useDevice();
 	const router = useRouter();
-
+	const isMobile = device === DEVICE_TYPES.mobile;
+	const isTablet = device === DEVICE_TYPES.tablet;
 	const [isProductSectionOpen, setProductSectionOpen] = useState<boolean>(false);
 	const [mobileBurgerOpened, setMobileBurgerOpened] = useState<boolean>(false);
 	const handleMobileMenu = () => setMobileBurgerOpened(!mobileBurgerOpened);
@@ -31,6 +32,8 @@ const Header: FC<T_Props> = () => {
 					isProductSectionOpen={isProductSectionOpen}
 					redirectPage={redirectPage}
 					handleMobileMenu={handleMobileMenu}
+					isTablet={isTablet}
+					isMobile={isMobile}
 				/>
 			)}
 			<div className={styles.header__wrapper}>
@@ -40,6 +43,7 @@ const Header: FC<T_Props> = () => {
 						height={device === DEVICE_TYPES.mobile ? 24 : 42}
 						src={Logo}
 						alt='Picture of the author'
+						className={styles.logo}
 					/>
 
 					{device !== DEVICE_TYPES.mobile && (
@@ -47,7 +51,8 @@ const Header: FC<T_Props> = () => {
 							isProductSectionOpen={isProductSectionOpen}
 							handleProductSection={handleProductSection}
 							redirectPage={redirectPage}
-							deviceType={device}
+							isMobile={isMobile}
+							isTablet={isTablet}
 						/>
 					)}
 				</div>

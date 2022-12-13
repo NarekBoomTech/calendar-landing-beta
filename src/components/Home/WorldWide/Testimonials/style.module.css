@@ -1,0 +1,299 @@
+.section {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 120px;
+}
+
+.section__first {
+	width: 100%;
+	padding-top: 200px;
+}
+
+.section__header {
+	font-size: 34px;
+	line-height: 128.5%;
+	margin: 0;
+}
+
+.section__second {
+	width: 100%;
+}
+
+.section__image {
+	background-image: url('../../../../assets/images/Home/WorldWide/seventh_image.png');
+	background-repeat: no-repeat no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	height: 783.93px;
+}
+
+.section__text {
+	font-size: 20px;
+	line-height: 26px;
+	margin: 15px 0px 0px 0px;
+	max-width: 609px;
+}
+
+.section__statistics {
+	max-width: 576px;
+	height: 220px;
+	margin-top: 97px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section__statistics_title,
+.section__statistics_text {
+	margin: 0;
+}
+
+.section__statistics_title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 40px;
+	letter-spacing: -0.215833px;
+	color: #3e1aab;
+}
+
+.section__statistics_text {
+	font-size: 30px;
+	line-height: 34px;
+	margin-top: 16px;
+}
+
+.section__statistics_container {
+	margin-top: 40px;
+}
+
+/* Start Card Section */
+.section__cards {
+	position: absolute;
+	right: 40px;
+	bottom: -130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+}
+
+.section__cards > article:nth-child(1) {
+	margin-right: 70px;
+}
+
+.section__cards_container {
+	display: flex;
+	gap: 49px;
+	margin-top: 39px;
+}
+
+.card {
+	min-width: 290px;
+	min-height: 216px;
+	background: #202020;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__header {
+	font-size: 18px;
+	line-height: 108%;
+	color: #ffffff;
+	margin: 0;
+	max-width: 234px;
+}
+
+.card_avatar {
+	width: 40px;
+	height: 40px;
+}
+
+.card__name {
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 108%;
+	color: #ffffff;
+	margin: 0;
+}
+
+.card__profession {
+	font-weight: 400;
+	font-size: 8px;
+	line-height: 108%;
+	color: #ffffff;
+	margin: 0;
+}
+
+.card__flex {
+	margin-top: 25px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+/* End Card Section */
+
+@media (max-width: 1441px) {
+	.section__image {
+		height: 100%;
+	}
+
+	.card {
+		min-width: 213px;
+		min-height: 159px;
+	}
+
+	.card__header {
+		font-size: 14px;
+		max-width: 189px;
+	}
+
+	.card__flex {
+		margin-top: 20px;
+		gap: 8px;
+	}
+
+	.section__cards {
+		bottom: -120px;
+	}
+
+	.section__cards_container {
+		gap: 24px;
+		margin-top: 24px;
+	}
+
+	.section__header {
+		font-size: 30px;
+		line-height: 128.5%;
+		max-width: 420px;
+	}
+
+	.section {
+		padding-left: 80px;
+	}
+
+	.section__text {
+		font-size: 16px;
+		line-height: 171%;
+		margin: 12px 0px 0px 0px;
+		max-width: 420px;
+	}
+
+	.section__statistics {
+		max-width: 420px;
+		height: 202px;
+		margin-top: 24px;
+	}
+
+	.section__statistics_title {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	.section__statistics_text {
+		font-size: 22px;
+		margin-top: 24px;
+		line-height: 25px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.section__cards {
+		/* position: absolute;
+		right: 40px; */
+		right: 20px;
+		bottom: 0px;
+		/* display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items: end; */
+	}
+
+	.card {
+		min-height: 163px;
+		padding: 20px;
+	}
+
+	.section__image {
+		height: 486px;
+	}
+
+	.section__cards_container {
+		gap: 16px;
+		margin-top: 16px;
+	}
+
+	.section__header {
+		font-size: 24px;
+		max-width: 292px;
+		line-height: 108%;
+	}
+
+	.section__text {
+		font-size: 16px;
+		line-height: 171%;
+		max-width: 292px;
+	}
+
+	.section__statistics {
+		width: 273px;
+		height: 158px;
+	}
+
+	.section__statistics_title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.section__statistics_text {
+		font-size: 16px;
+		line-height: 18px;
+		margin-top: 16px;
+	}
+
+	.section__first {
+		padding-top: 80px;
+	}
+
+	.section__statistics_container {
+		margin-top: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		min-width: 153px;
+	}
+
+	.section {
+		flex-direction: column;
+		padding-left: 15px;
+	}
+
+	.section__image {
+		height: 479px;
+	}
+
+	.section__first {
+		padding-top: 0px;
+	}
+
+	.section__header {
+		font-size: 18px;
+		line-height: 128.5%;
+		margin-top: 21px;
+	}
+
+	.section__text {
+		font-size: 14px;
+		line-height: 26px;
+		max-width: 100%;
+		margin: 15px 19px 0px 0px;
+	}
+
+	.section__statistics {
+		display: none;
+	}
+}

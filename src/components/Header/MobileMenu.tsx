@@ -1,7 +1,5 @@
 import styles from '@/components/Header/style.module.css';
-import { useRouter } from 'next/router';
 import { FC } from 'react';
-import { DEVICE_TYPES } from 'src/helpers/constants/constants';
 import Button from '@/components/Button/Button';
 import MenuSection from './MenuSection/MenuSection';
 
@@ -9,17 +7,20 @@ type T_Props = {
 	handleProductSection: () => void;
 	isProductSectionOpen: boolean;
 	redirectPage: (url: string | undefined) => void;
-	handleMobileMenu: () => void
+	handleMobileMenu: () => void;
+	isMobile: boolean;
+	isTablet: boolean
 };
 
-const MobileMenu: FC<T_Props> = ({ redirectPage, handleProductSection, isProductSectionOpen, handleMobileMenu }) => {
+const MobileMenu: FC<T_Props> = ({ redirectPage, handleProductSection, isProductSectionOpen, handleMobileMenu, isMobile, isTablet }) => {
 	return (
 		<div className={styles.mobile_menu}>
 			<MenuSection
 				isProductSectionOpen={isProductSectionOpen}
 				handleProductSection={handleProductSection}
 				redirectPage={redirectPage}
-				deviceType={DEVICE_TYPES.mobile}
+				isTablet={isTablet}
+				isMobile={isMobile}
 				handleMobileMenu={handleMobileMenu}
 			/>
 			<div className={styles.button__wrapper}>
