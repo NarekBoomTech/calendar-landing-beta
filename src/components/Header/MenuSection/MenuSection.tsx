@@ -44,7 +44,11 @@ const MenuSection: FC<T_Props> = ({
 				<li
 					onClick={isMobile || isTablet ? handleProductSection : () => null}
 					className={isMobile ? styles.product__section__mobile : styles.product__section}
-					style={isProductSectionOpen ? { border: 'none' } : {}}
+					style={
+						(!isProductSectionOpen && isTablet) || (isProductSectionOpen && isMobile)
+							? { border: 'none' }
+							: {}
+					}
 				>
 					Product
 					<Image
