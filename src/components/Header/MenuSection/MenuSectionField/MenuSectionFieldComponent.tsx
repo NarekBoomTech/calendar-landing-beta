@@ -27,7 +27,7 @@ const MenuSectionFieldComponent: FC<T_Props> = ({ field }) => {
 					alt='Picture of the author'
 					style={isMobile ? { height: '20px', width: '20px' } : { height: '25px' }}
 				/>
-				<p style={{ color: field.color }}>{field.title}</p>
+				<p style={{ color: field.color, fontFamily: 'Helvetica' }}>{field.title}</p>
 			</div>
 
 			<p className={isMobile ? styles.field__decription : ''}>{field.description}</p>

@@ -4,7 +4,7 @@ import ThirdBlock from '@/assets/images/Home/Products/third_section.png';
 import { T_Blog, T_Products, T_Testimonials } from 'src/helpers/types/types';
 import Avatar from '@/assets/images/Home/WorldWide/card_avatar.png';
 import BlogImage from '@/assets/images/Home/WorldWide/Blog/blog_image.png';
-import { T_NavigationField } from './../types/types';
+import { T_NavigationField } from 'src/helpers/types/types';
 import CalendarIcon from '@/assets/images/CalendarIcon.svg';
 import Registration from '@/assets/images/Registration.svg';
 import Subscription from '@/assets/images/Subscription.svg';

@@ -20,7 +20,10 @@ const Header: FC<T_Props> = () => {
 	const isTablet = device === DEVICE_TYPES.tablet;
 	const [isProductSectionOpen, setProductSectionOpen] = useState<boolean>(false);
 	const [mobileBurgerOpened, setMobileBurgerOpened] = useState<boolean>(false);
-	const handleMobileMenu = () => setMobileBurgerOpened(!mobileBurgerOpened);
+	const handleMobileMenu = () => {
+		document.body.style.overflow = mobileBurgerOpened ? 'auto' : 'hidden';
+		setMobileBurgerOpened(!mobileBurgerOpened);
+	};
 	const handleProductSection = () => setProductSectionOpen(!isProductSectionOpen);
 	const redirectPage = (url: string | undefined) => router.push(String(url));
 
@@ -76,7 +79,9 @@ const Header: FC<T_Props> = () => {
 							height={12}
 							src={mobileBurgerOpened ? CloseMobileMenu : Burger}
 							alt='Picture of the author'
-							onClick={handleMobileMenu}
+							onClick={() => {
+								handleMobileMenu(), setProductSectionOpen(false);
+							}}
 						/>
 					)}
 				</div>
