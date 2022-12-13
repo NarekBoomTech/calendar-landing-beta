@@ -26,7 +26,6 @@ const Header: FC<T_Props> = () => {
 	};
 	const handleProductSection = () => setProductSectionOpen(!isProductSectionOpen);
 	const redirectPage = (url: string | undefined) => router.push(String(url));
-
 	return (
 		<header>
 			{mobileBurgerOpened && (

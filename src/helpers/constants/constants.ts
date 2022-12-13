@@ -130,7 +130,7 @@ export const PLANS_FIELD: T_NavigationField[] = [
 	},
 	{
 		title: 'Business',
-		description: 'For teams and companies that need to manage work across initiatives.',
+		description: 'For teams and companies that need to manage work across initiatives',
 		icon: Busines,
 		color: '#3E1AAB'
 	}
@@ -157,7 +157,7 @@ export const FEATURES_FIELDS: T_NavigationField[] = [
 	},
 	{
 		title: 'Subscription',
-		description: 'Make sure your users will avoid extra work and',
+		description: 'Save your users from additional work with a subscription that is on a regular basis',
 		icon: Subscription,
 		color: '#F2994A'
 	},
