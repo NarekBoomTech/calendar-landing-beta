@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { FC, PropsWithChildren } from 'react';
 
 type T_ButtonProps = PropsWithChildren<{
-	skin: 'light' | 'dark' | 'transparent';
+	skin: 'light' | 'dark' | 'transparent' | 'fun' | 'fun--light';
 	size: 'small' | 'medium' | 'big' | 'large';
 	buttonName?: string;
 	width?: number;

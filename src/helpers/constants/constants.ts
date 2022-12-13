@@ -18,6 +18,10 @@ import Premium from '@/assets/images/Premium.svg';
 import Busines from '@/assets/images/Business.svg';
 import Ticketing from '@/assets/images/Ticketing.svg';
 
+import ClanedarImage from '@/assets/images/Home/CalendarEvents/calendar.png';
+import Clanedar2Image from '@/assets/images/Home/CalendarEvents/calendar_2.png';
+import Clanedar3Image from '@/assets/images/Home/CalendarEvents/calendar_3.png';
+
 export const ROUTING_URLS = {
 	support: '/support',
 	pricing: '/pricing'
@@ -187,5 +191,71 @@ export const FEATURES_FIELDS: T_NavigationField[] = [
 		description: 'Make your workspace comfy for you and for your users',
 		icon: Customization,
 		color: '#56CCF2'
+	}
+];
+
+export const CALENDAR_FEATURES = [
+	{
+		id: 1,
+		name: 'Calendar Views',
+		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event.',
+		image: ClanedarImage
+	},
+	{
+		id: 2,
+		name: 'Registration',
+		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 ',
+		image: Clanedar2Image
+	},
+	{
+		id: 3,
+		name: 'Ticketing',
+		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 213 123',
+		image: ClanedarImage
+	},
+	{
+		id: 4,
+		name: 'Subscription',
+		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 123213',
+		image: ClanedarImage
+	},
+	{
+		id: 5,
+		name: 'Add Event',
+		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 213213',
+		image: ClanedarImage
+	},
+	{
+		id: 6,
+		name: 'Import and Export Event',
+		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event.  gfdg',
+		image: ClanedarImage
+	}
+];
+
+export const CALENDAR_VIEWS = [
+	{
+		name: 'Monthly',
+		image: ClanedarImage
+	},
+	{
+		name: 'Daily',
+		image: Clanedar3Image
+	},
+	{
+		name: 'Weekly',
+		image: ClanedarImage
+	},
+	{
+		name: 'Agenda',
+		image: ClanedarImage
+	},
+	{
+		name: 'Card',
+		image: ClanedarImage
+	},
+	{
+		name: 'Map',
+		image: ClanedarImage
 	}
 ];

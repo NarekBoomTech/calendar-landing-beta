@@ -11,6 +11,18 @@
 	height: 42px;
 }
 
+.fun {
+	background: rgba(53, 25, 136, 0.1);
+	border: none;
+	border-radius: 100px;
+}
+
+.fun--light {
+	background: #ffffff;
+	border: none;
+	border-radius: 100px;
+}
+
 .dark {
 	background: #3e1aab;
 	color: #ffffff;
@@ -40,6 +52,7 @@
 	width: 144px;
 	font-size: 16px;
 	line-height: 18px;
+	padding: 0px;
 }
 
 .big {
@@ -51,7 +64,8 @@
 }
 
 .small {
-	padding: 8px 22px 8px 21px;
+	padding: 0px;
+	/* padding: 8px 22px 8px 21px; */
 	width: 114px;
 	height: 32px;
 }

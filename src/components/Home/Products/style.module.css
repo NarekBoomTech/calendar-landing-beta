@@ -3,6 +3,10 @@
 	margin: 0px;
 }
 
+.section {
+	margin-top: 180px;
+}
+
 .section__header {
 	font-size: 34px;
 	line-height: 148.02%;
@@ -54,6 +58,10 @@
 }
 
 @media (max-width: 1441px) {
+	.section {
+		margin-top: 80px;
+	}
+
 	.block:nth-child(n + 1) .block__image {
 		width: 420px;
 		height: 263px;
@@ -98,6 +106,10 @@
 }
 
 @media (max-width: 1024px) {
+	.section {
+		margin-top: 230px;
+	}
+
 	.block:nth-child(n + 1) .block__image {
 		width: 292px;
 		height: 182px;
@@ -138,6 +150,10 @@
 }
 
 @media (max-width: 768px) {
+	.section {
+		margin-top: 103px;
+	}
+
 	.section__header {
 		font-size: 20px;
 		line-height: 148.02%;
