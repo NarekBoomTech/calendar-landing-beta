@@ -171,7 +171,8 @@
 }
 
 .plans__wrapper__mobile{
-    gap: 0px
+    padding-top: 10px;
+    /* gap: 10px */
 }
 .divider__line{
     height: auto;
