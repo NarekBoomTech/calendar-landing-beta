@@ -22,8 +22,6 @@ const CalenDarComponent: FC<T_CalendarSVG> = ({
 	return (
 		<svg
 			className={styles.canedar__wrapper}
-			// width='00px'
-			// height='600px'
 			viewBox='0 0 1153 911'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
@@ -35,7 +33,6 @@ const CalenDarComponent: FC<T_CalendarSVG> = ({
 					rx='10'
 					fill='white'
 					stroke='white'
-					// stroke-width={borderWidth}
 				/>
 			</g>
 			<path

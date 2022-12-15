@@ -223,8 +223,8 @@
 
 @media (max-width: 1023px) {
 	.canedar__wrapper{
-		width: 668px;
-		height: 520px;
+		width: 720px!important;
+		height: 530.4px;
 	  }
 	  .calendar__design__section{
 		flex-direction: column-reverse;
@@ -235,7 +235,7 @@
 		flex-direction: row;
 		gap: 16px;
 	    height: 66px;		
-		width: 635px;
+		width: 648px;
 		padding: 16px 12px 12px 12px;	
  }
  .input__wrapper, .input__wrapper__border{
@@ -246,7 +246,7 @@
 	margin-top: 80px;
 }
 .settings__wrapper{
-	width: 635px;
+	width: 648px;
 	gap:12px
 }
 .styles__wrapper{
@@ -256,7 +256,7 @@
 }
 .radioRange, .skeleton__wrapper{
 	align-items: center;
-	width: 635px;
+	width: 648px;
 	justify-content: center;
 
 }
