@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { DEVICE_TYPES } from 'src/helpers/constants/constants';
 
-export const useDevice = () => {
+export const  useDevice = () => {
 	const [device, setDevice] = useState<string>('');
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -9,6 +9,8 @@ export const useDevice = () => {
 				setDevice(DEVICE_TYPES.mobile);
 			} else if (window.innerWidth <= 1024) {
 				setDevice(DEVICE_TYPES.tablet);
+			} else if (window.innerWidth <= 1440) {
+				setDevice(DEVICE_TYPES.laptop);
 			} else {
 				setDevice(DEVICE_TYPES.desktop);
 			}

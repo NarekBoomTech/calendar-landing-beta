@@ -5,8 +5,12 @@ import Design from '@/components/Home/Design/Design';
 import Integrations from '@/components/Home/Integrations/Integrations';
 import WorldWide from '@/components/Home/WorldWide/WorldWide';
 import Head from 'next/head';
+import { useDevice } from '@/hooks/useDevice';
+import { DEVICE_TYPES } from 'src/helpers/constants/constants';
 
 const Home = () => {
+	const device = useDevice();
+	const isMobile = device === DEVICE_TYPES.mobile;
 	return (
 		<>
 			<Head>
@@ -24,7 +28,7 @@ const Home = () => {
 			<Celebrate />
 			<GetToKnow />
 			<CalendarsEvents />
-			<Design />
+			{!isMobile && <Design />}
 			<Integrations />
 			<WorldWide />
 		</>

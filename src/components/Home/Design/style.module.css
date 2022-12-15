@@ -1,5 +1,267 @@
-.a {
+.calendar__design__wrapper{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 170px;
+}
+.calendar__design__section{
+	display: flex;
+	align-items: flex-start;
 	width: 100%;
-	height: 500px;
-	border: 1px solid red;
+	height: auto;
+	justify-content: center;
+	gap:52px;
+	margin: 0;
+}
+.celandar__design__title{
+	color: #272727;
+	font-size: 34px;
+	line-height: 108%;
+	margin: 0;
+	}
+.celandar__design__title>span{
+		color: #3E1AAB
+	}
+.calendar__design__subtitle{
+	font-size: 20px;
+	line-height: 171%;
+	text-align: center;
+	color: #958A8A;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 20px
+}
+.radioRange{
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+  }
+  .radioRange>h2{
+	margin: 0;
+	font-size: 16px;
+	line-height: 19px;
+  }
+  .inputs__wrapper,  .input__wrapper,  .input__wrapper__border {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 10px 16px 20px 16px;
+	background: rgba(62, 26, 171, 0.05);
+	height: 114px;
+	margin-bottom: 6px;
+  }
+  .inputs__wrapper>div{
+	width: 100%;
+  }
+  .input__wrapper,  .input__wrapper__border{
+	justify-content: space-around;
+	width: 100%;
+	height: 58px;
+	gap:10px
+  }
+
+  .input__wrapper__border{
+	gap:8px
+  }
+
+  .canedar__wrapper{
+	width: 684px;
+	height: 528px;
+	margin: 0!important;
+	padding: 0!important;
+  }
+
+ .input__text__wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+	width: 100%;
+	margin: 0px;
+	padding-top: 10px
+ }
+ .input__text__wrapper>p,  .input__wrapper>p{
+	margin: 0px
+ }
+
+.inputs__wrapper>div>p{
+	margin: 0;
+	padding-bottom: 6px;
+}
+
+.styles__wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px
+}
+.styles__wrapper>h2{
+	margin:0;
+	font-size: 16px;
+	line-height: 19px;
+}
+.styles__icons__wrapper{
+	width: 434px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.style__icon{
+	width: 50px;
+	height: 50px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	box-sizing: border-box; 
+}
+.style__icon>img{
+    width: 50px!important;
+	height: 50px!important; 
+	position: relative;
+}
+.style__icon__simple>img{
+	width: 50px;
+	height: 50px; 
+  }
+.style__icon::before{
+	content: "";
+	border: 2px solid #3899EC;
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	transform: rotate(45deg);
+	border-radius: 6px;
+	padding: 0px;
+}
+.skeleton__wrapper{
+	display: flex;
+	gap: 14px;
+	flex-direction: column;
+}
+
+.settings__wrapper{
+	display: flex;
+	flex-direction: column;
+	gap:30px;
+	width: 515px;
+	height: auto;
+	padding-top: 14px;
+	
+}
+@media (max-width: 1399px) {
+	.settings__wrapper{
+		width:340px;
+		gap: 12px
+	}
+	.styles__icons__wrapper{
+		width: 256px;
+	}
+	.calendar__design__section{
+		align-items: flex-start;
+		gap: 14px
+	}
+	.calendar__design__wrapper{
+		margin-top: 80px;
+	}
+	.input__wrapper, .input__wrapper__border{
+		height: 70px;
+		padding: 12px 12px 6px 12px;		 
+	}
+
+	.inputs__wrapper{
+		height: 128px; 
+		padding: 12px 12px 6px 12px;
+	}
+	.skeleton__wrapper{
+		display: flex;
+		justify-content: space-between;
+		gap: 18px;
+		flex-direction: row;
+	}
+	.canedar__wrapper{
+		width: 560px;
+		height: 442px;
+	  }
+	  .style__icon__simple>img{
+		width: 30px;
+		height: 30px; 
+	  }
+	  .style__icon{
+		width: 30px;
+		height: 30px; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		box-sizing: border-box; 
+	}
+	  .style__icon>img{
+		width: 30px!important;
+		height: 30px!important;
+	  }
+	  .style__icon::before{
+		content: "";
+		border: 2px solid #3899EC;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		transform: rotate(45deg);
+		border-radius: 5px;
+		 padding: 0px;
+	}
+	  .radioRange{
+		gap: 8px;
+	  }
+	  .styles__wrapper{
+		
+		gap: 8px
+	}
+	
+}
+
+@media (max-width: 1023px) {
+	.canedar__wrapper{
+		width: 668px;
+		height: 520px;
+	  }
+	  .calendar__design__section{
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 24px
+	  } 
+	  .inputs__wrapper{
+		flex-direction: row;
+		gap: 16px;
+	    height: 66px;		
+		width: 635px;
+		padding: 16px 12px 12px 12px;	
+ }
+ .input__wrapper, .input__wrapper__border{
+	padding: 16px 12px 12px 12px;	
+}
+
+ .calendar__design__wrapper{
+	margin-top: 80px;
+}
+.settings__wrapper{
+	width: 635px;
+	gap:12px
+}
+.styles__wrapper{
+	align-items: center;
+	justify-content: center;
+	gap: 12px
+}
+.radioRange, .skeleton__wrapper{
+	align-items: center;
+	width: 635px;
+	justify-content: center;
+
+}
+.skeleton__wrapper{
+	gap:20px
+}
+
 }

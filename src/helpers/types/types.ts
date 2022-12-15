@@ -33,3 +33,16 @@ export type T_NavigationField = {
 	icon: ImageProps['src'];
 	color: string;
 };
+ export type T_RGBA = {
+    r: number;
+    g: number;
+    b: number;
+    a: number;
+  };
+
+  export type T_CalendarStyles = {
+	name: string 
+	icon: ImageProps['src'];
+	color: T_RGBA
+}
+

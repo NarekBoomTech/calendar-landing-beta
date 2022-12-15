@@ -2,6 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
+	optimizeFonts: false,
 	env: {
 		LOG_IN: 'https://auth.boomtechdev.com/signin',
 		SIGN_UP: 'https://auth.boomtechdev.com/signup',
