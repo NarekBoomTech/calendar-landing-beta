@@ -89,7 +89,7 @@
 	max-width: 560px;
 }
 
-@media (max-width: 1441px) {
+@media (max-width: 1439px) {
 	.section__wave {
 		height: 258px;
 		top: 495px;
@@ -149,7 +149,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 	.section__wave {
 		height: 208px;
 		top: 420px;
@@ -182,7 +182,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.section__wave {
 		height: 146px;
 		top: 662px;

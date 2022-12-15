@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 const Integrations = () => {
 	return (
 		<section className={styles.section}>
-			<section>
+			<section className={styles.section__first}>
 				<h2 className={classNames(styles.section__header, inter.className)}>
 					Make easier to create event with our Integrations
 				</h2>
