@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 const Testimonials = () => {
 	return (
 		<section className={styles.section}>
+			<div className={styles.section__globus}></div>
 			<section className={styles.section__first}>
 				<h2 className={classNames(styles.section__header, inter.className)}>
 					Create your event wordwide
@@ -47,7 +48,7 @@ const Testimonials = () => {
 				</div>
 			</section>
 
-			<section className={styles.section__second}>
+			<section>
 				<div className={styles.section__image}>
 					<section className={styles.section__cards}>
 						<CardReview

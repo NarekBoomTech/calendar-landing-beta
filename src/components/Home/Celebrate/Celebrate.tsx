@@ -15,6 +15,7 @@ import MainMobilePic from '@/assets/images/Home/Celebrate/main_image_mobile.png'
 import { Inter } from '@next/font/google';
 import VideoModal from '@/components/Modal/VideoModal';
 import { useState } from 'react';
+import Line from '../Line/Line';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,6 +32,8 @@ const CelebrateComp = () => {
 		<div style={{ position: 'relative' }}>
 			<section className={styles.section}>
 				<section className={styles.section__first}>
+					<Line />
+
 					<Image
 						className={styles['section__celebrate-image']}
 						src={isMobile ? CelebrateMobile : Celebrate}

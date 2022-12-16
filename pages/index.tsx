@@ -33,7 +33,6 @@ const Home = () => {
 			{!isMobile && <Design />}
 			<Integrations />
 			<WorldWide />
-			<Line />
 		</>
 	);
 };

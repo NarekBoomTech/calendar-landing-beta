@@ -20,11 +20,11 @@ import Ticketing from '@/assets/images/Ticketing.svg';
 import ClanedarImage from '@/assets/images/Home/CalendarEvents/calendar.png';
 import Clanedar2Image from '@/assets/images/Home/CalendarEvents/calendar_2.png';
 import Clanedar3Image from '@/assets/images/Home/CalendarEvents/calendar_3.png';
-import Lilac from '@/assets/images/Lilac.svg'
-import Green from '@/assets/images/Green.svg'
-import Yellow from '@/assets/images/Yellow.svg'
-import Pink from '@/assets/images/Pink.svg'
-import Blue from '@/assets/images/Blue.svg'
+import Lilac from '@/assets/images/Lilac.svg';
+import Green from '@/assets/images/Green.svg';
+import Yellow from '@/assets/images/Yellow.svg';
+import Pink from '@/assets/images/Pink.svg';
+import Blue from '@/assets/images/Blue.svg';
 
 export const ROUTING_URLS = {
 	support: '/support',
@@ -162,7 +162,8 @@ export const FEATURES_FIELDS: T_NavigationField[] = [
 	},
 	{
 		title: 'Subscription',
-		description: 'Save your users from additional work with a subscription that is on a regular basis',
+		description:
+			'Save your users from additional work with a subscription that is on a regular basis',
 		icon: Subscription,
 		color: '#F2994A'
 	},
@@ -265,11 +266,10 @@ export const CALENDAR_VIEWS = [
 	}
 ];
 
-
 export const stylesIcons: T_CalendarStyles[] = [
-	{name: 'Lilac', icon: Lilac, color: {r: 103, g: 64, b: 234, a: 1}},
-	{name: 'Green', icon: Green, color: {r: 29, g: 207, b: 169, a: 1}},
-	{name: 'Yellow', icon: Yellow, color: {r: 255, g: 182, b: 18, a: 1}},
-	{name: 'Pink', icon: Pink, color:{r: 255, g: 170, b: 236, a: 1}},
-	{name: 'Blue', icon: Blue,color: {r: 29, g: 25, b: 238, a: 1}},
-]
+	{ name: 'Lilac', icon: Lilac, color: { r: 103, g: 64, b: 234, a: 1 } },
+	{ name: 'Green', icon: Green, color: { r: 29, g: 207, b: 169, a: 1 } },
+	{ name: 'Yellow', icon: Yellow, color: { r: 255, g: 182, b: 18, a: 1 } },
+	{ name: 'Pink', icon: Pink, color: { r: 255, g: 170, b: 236, a: 1 } },
+	{ name: 'Blue', icon: Blue, color: { r: 29, g: 25, b: 238, a: 1 } }
+];

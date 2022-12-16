@@ -1,7 +1,8 @@
 .container {
 	position: absolute;
-	top: 146px;
-	left: 40px;
+	top: 54px;
+	left: -72px;
+	z-index: 1;
 }
 
 .line {
@@ -70,8 +71,8 @@
 
 @media (max-width: 1439px) {
 	.container {
-		top: 130px;
-		left: 18px;
+		top: 40px;
+		left: -52px;
 	}
 
 	.line_one {

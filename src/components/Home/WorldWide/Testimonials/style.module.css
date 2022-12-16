@@ -1,12 +1,21 @@
 .section {
 	display: flex;
 	justify-content: center;
-	gap: 61px;
-	padding-left: 120px;
+	gap: 28px;
+	position: relative;
+}
+
+.section__globus {
+	background-image: url('../../../../assets/images/Home/WorldWide/seventh_image.png');
+	background-repeat: no-repeat no-repeat;
+	background-size: cover;
+	height: 783.93px;
+	width: 808.63px;
+	position: absolute;
+	right: 0px;
 }
 
 .section__first {
-	width: 100%;
 	padding-top: 200px;
 }
 
@@ -16,14 +25,7 @@
 	margin: 0;
 }
 
-.section__second {
-	width: 100%;
-}
-
 .section__image {
-	background-image: url('../../../../assets/images/Home/WorldWide/seventh_image.png');
-	background-repeat: no-repeat no-repeat;
-	background-size: cover;
 	width: 100%;
 	position: relative;
 	height: 783.93px;
@@ -69,9 +71,9 @@
 
 /* Start Card Section */
 .section__cards {
-	position: absolute;
-	right: 40px;
-	bottom: -130px;
+	position: relative;
+	right: -40px;
+	bottom: -400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
@@ -141,6 +143,11 @@
 		height: 100%;
 	}
 
+	.section__globus {
+		width: 501px;
+		height: 486px;
+	}
+
 	.section__first {
 		padding-top: 99px;
 	}
@@ -161,7 +168,7 @@
 	}
 
 	.section__cards {
-		bottom: -120px;
+		bottom: -300px;
 	}
 
 	.section__cards_container {
@@ -173,10 +180,6 @@
 		font-size: 30px;
 		line-height: 128.5%;
 		max-width: 420px;
-	}
-
-	.section {
-		padding-left: 80px;
 	}
 
 	.section__text {
@@ -207,7 +210,7 @@
 @media (max-width: 1023px) {
 	.section__cards {
 		right: 20px;
-		bottom: 0px;
+		bottom: -200px;
 	}
 
 	.card {
@@ -263,12 +266,18 @@
 
 @media (max-width: 767px) {
 	.card {
-		min-width: 153px;
+		width: 213px;
+		height: 163px;
+		/* min-width: 153px; */
 	}
 
 	.section {
 		flex-direction: column;
 		padding-left: 15px;
+	}
+
+	.section__cards {
+		bottom: -300px;
 	}
 
 	.section__image {
