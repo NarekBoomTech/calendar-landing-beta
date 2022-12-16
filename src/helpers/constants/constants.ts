@@ -1,3 +1,4 @@
+import { T_FooterFields } from 'src/helpers/types/types';
 import FirstBlock from '@/assets/images/Home/Products/first_block.png';
 import SecondBlock from '@/assets/images/Home/Products/second_block.png';
 import ThirdBlock from '@/assets/images/Home/Products/third_section.png';
@@ -267,9 +268,22 @@ export const CALENDAR_VIEWS = [
 ];
 
 export const stylesIcons: T_CalendarStyles[] = [
-	{ name: 'Lilac', icon: Lilac, color: { r: 103, g: 64, b: 234, a: 1 } },
-	{ name: 'Green', icon: Green, color: { r: 29, g: 207, b: 169, a: 1 } },
-	{ name: 'Yellow', icon: Yellow, color: { r: 255, g: 182, b: 18, a: 1 } },
-	{ name: 'Pink', icon: Pink, color: { r: 255, g: 170, b: 236, a: 1 } },
-	{ name: 'Blue', icon: Blue, color: { r: 29, g: 25, b: 238, a: 1 } }
-];
+	{name: 'Lilac', icon: Lilac, color: {r: 103, g: 64, b: 234, a: 1}},
+	{name: 'Green', icon: Green, color: {r: 29, g: 207, b: 169, a: 1}},
+	{name: 'Yellow', icon: Yellow, color: {r: 255, g: 182, b: 18, a: 1}},
+	{name: 'Pink', icon: Pink, color:{r: 255, g: 170, b: 236, a: 1}},
+	{name: 'Blue', icon: Blue,color: {r: 29, g: 25, b: 238, a: 1}},
+]
+
+export const footerColumns:T_FooterFields[] = [
+	{title: 'PRODUCT',
+	fields: [{name: 'Features', href: '#'}, {name:'About Boom Calendar', href: '#'}, {name:'Managing Your Event', href: '#'}, {name:'Collaborating with Boom Calendar', href: '#'} ]	
+},
+{	title: 'Eventtmaker',
+	fields: [{name:'Create Your Own Event', href: '#'}, {name:'Subscription' , href: '#'}, {name:'Tickets', href: '#'}]	
+},
+{ 	title: 'Integrations ',
+	fields: [{name:'Features', href: '#'}, {name:'About Boom Calendar', href: '#'}, {name:'Managing Your Event', href: '#'}, {name:'Collaborating with Boom Calendar', href: '#'} ]	
+},
+]
+

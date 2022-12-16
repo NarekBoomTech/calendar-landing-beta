@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ['latin'] });
 const Testimonials = () => {
 	return (
 		<section className={styles.section}>
-			<div className={styles.section__globus}></div>
-			<section className={styles.section__first}>
+			{/* <div className={styles.section__globus}></div> */}
+			<section>
 				<h2 className={classNames(styles.section__header, inter.className)}>
 					Create your event wordwide
 				</h2>

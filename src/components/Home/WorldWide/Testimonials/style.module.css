@@ -3,6 +3,7 @@
 	justify-content: center;
 	gap: 28px;
 	position: relative;
+	padding-top: 200px;
 }
 
 .section__globus {
@@ -13,10 +14,6 @@
 	width: 808.63px;
 	position: absolute;
 	right: 0px;
-}
-
-.section__first {
-	padding-top: 200px;
 }
 
 .section__header {
@@ -71,28 +68,21 @@
 
 /* Start Card Section */
 .section__cards {
-	position: relative;
-	right: -40px;
-	bottom: -400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 	align-items: end;
 }
 
-.section__cards > article:nth-child(1) {
-	margin-right: 70px;
-}
-
 .section__cards_container {
 	display: flex;
-	gap: 49px;
-	margin-top: 39px;
+	gap: 32px;
+	margin-top: 32px;
 }
 
 .card {
-	min-width: 290px;
-	min-height: 216px;
+	width: 290px;
+	height: 216px;
 	background: #202020;
 	border-radius: 8px;
 	display: flex;
@@ -139,6 +129,11 @@
 /* End Card Section */
 
 @media (max-width: 1439px) {
+	.section {
+		padding-top: 99px;
+		gap: 34px;
+	}
+
 	.section__image {
 		height: 100%;
 	}
@@ -148,13 +143,9 @@
 		height: 486px;
 	}
 
-	.section__first {
-		padding-top: 99px;
-	}
-
 	.card {
-		min-width: 213px;
-		min-height: 159px;
+		width: 213px;
+		height: 159px;
 	}
 
 	.card__header {
@@ -179,18 +170,18 @@
 	.section__header {
 		font-size: 30px;
 		line-height: 128.5%;
-		max-width: 420px;
+		width: 420px;
 	}
 
 	.section__text {
 		font-size: 16px;
 		line-height: 171%;
 		margin: 12px 0px 0px 0px;
-		max-width: 420px;
+		width: 420px;
 	}
 
 	.section__statistics {
-		max-width: 420px;
+		width: 420px;
 		height: 202px;
 		margin-top: 24px;
 	}
@@ -208,13 +199,19 @@
 }
 
 @media (max-width: 1023px) {
+	.section {
+		padding-top: 80px;
+		gap: 94px;
+	}
+
 	.section__cards {
 		right: 20px;
 		bottom: -200px;
 	}
 
 	.card {
-		min-height: 163px;
+		width: 213px;
+		height: 163px;
 		padding: 20px;
 	}
 
@@ -255,10 +252,6 @@
 		margin-top: 16px;
 	}
 
-	.section__first {
-		padding-top: 80px;
-	}
-
 	.section__statistics_container {
 		margin-top: 24px;
 	}
@@ -277,15 +270,11 @@
 	}
 
 	.section__cards {
-		bottom: -300px;
+		/* bottom: -300px; */
 	}
 
 	.section__image {
 		height: 479px;
-	}
-
-	.section__first {
-		padding-top: 0px;
 	}
 
 	.section__header {

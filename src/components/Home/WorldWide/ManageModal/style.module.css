@@ -53,9 +53,9 @@
 
 @media (max-width: 767px) {
 	.section {
-		margin: 48px 15px 0px 15px;
+		margin: 48px auto 0px auto;
 		height: 126px;
-		width: calc(100% - 30px);
+		max-width: 384px;
 		border-radius: 8px;
 	}
 

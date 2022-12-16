@@ -7,7 +7,6 @@ import WorldWide from '@/components/Home/WorldWide/WorldWide';
 import Head from 'next/head';
 import { useDevice } from '@/hooks/useDevice';
 import { DEVICE_TYPES } from 'src/helpers/constants/constants';
-import Line from '@/components/Home/Line/Line';
 
 const Home = () => {
 	const device = useDevice();

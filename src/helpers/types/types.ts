@@ -46,3 +46,7 @@ export type T_NavigationField = {
 	color: T_RGBA
 }
 
+export type T_FooterFields = {
+	title: string, 
+	fields: {name: string, href: string}[]
+}
