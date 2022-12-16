@@ -4,6 +4,7 @@ import { useDevice } from '@/hooks/useDevice';
 import { useRedirect } from '@/hooks/useRedirect';
 import { Inter } from '@next/font/google';
 import classNames from 'classnames';
+import { DEVICE_TYPES } from 'src/helpers/constants/constants';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +20,7 @@ const ManageModal = () => {
 
 			<Button
 				skin='transparent'
-				width={device === 'mobile' ? 157 : 191}
+				width={device === DEVICE_TYPES.mobile ? 157 : 191}
 				size={'medium'}
 				borderRadius={105}
 				onClick={() => redirect(process.env.SIGN_UP)}

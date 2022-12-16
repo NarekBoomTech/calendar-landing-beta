@@ -1,10 +1,13 @@
 .picker{
     border-radius: 4px!important;
     width: 100%!important;
+    height: 8px!important;
   }
   .picker div{
     border-radius: 4px!important;
     height: 8px!important;
+    margin: 0px!important;
+    padding: 0px!important
   }
   .picker div div{
     display: flex !important;

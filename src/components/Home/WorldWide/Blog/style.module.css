@@ -29,9 +29,6 @@
 .section__image {
 	width: 355px;
 	height: 282px;
-	max-width: 100%;
-	display: block;
-	object-fit: cover;
 }
 
 .setion__button {
@@ -48,10 +45,6 @@
 .section__slides {
 	display: flex;
 	gap: 60px;
-	overflow-x: scroll;
-	position: relative;
-	scroll-behavior: smooth;
-	scroll-snap-type: x mandatory;
 }
 
 .section__block_header {
@@ -64,6 +57,16 @@
 }
 
 @media (max-width: 1439px) {
+	.section {
+		margin-top: calc(80px + 120px);
+	}
+
+	.section__image {
+		width: 285px;
+		height: 282px;
+		object-fit: cover;
+	}
+
 	.section__header {
 		font-size: 30px;
 		line-height: 128.5%;
@@ -82,11 +85,6 @@
 		margin-right: auto;
 	}
 
-	.section__image {
-		width: 285px;
-		height: 282px;
-	}
-
 	.section__slider {
 		margin-top: 24px;
 	}
@@ -97,6 +95,10 @@
 }
 
 @media (max-width: 1023px) {
+	.section {
+		margin-top: 80px;
+	}
+
 	.section__header {
 		font-size: 24px;
 	}
@@ -122,6 +124,16 @@
 }
 
 @media (max-width: 767px) {
+	.section {
+		margin-top: 60px;
+		margin-left: 15px;
+	}
+
+	.section__image {
+		width: 220px;
+		height: 228px;
+	}
+
 	.section__slider {
 		max-width: 100%;
 		overflow-y: hidden;
@@ -133,8 +145,11 @@
 		display: none !important;
 	}
 
-	.section {
-		margin-top: 60px;
+	.section__slides {
+		overflow-x: scroll;
+		position: relative;
+		scroll-behavior: smooth;
+		scroll-snap-type: x mandatory;
 	}
 
 	.section__header {
@@ -160,8 +175,8 @@
 	}
 
 	.section__image {
-		width: 220px;
-		height: 228px;
+		max-width: 220px;
+		height: auto;
 	}
 
 	.setion__button {

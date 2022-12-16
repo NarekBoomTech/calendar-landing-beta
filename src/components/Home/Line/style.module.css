@@ -1,0 +1,136 @@
+.container {
+	position: absolute;
+	top: 146px;
+	left: 40px;
+}
+
+.line {
+	width: 1px;
+	background-color: #d9d9d9;
+}
+
+.line_one {
+	height: 2040px;
+	margin-left: 22px;
+}
+
+.circle {
+	margin-left: 16px;
+	margin-top: 10px;
+	margin-bottom: 9px;
+}
+
+.boom_logo {
+	margin-bottom: 10px;
+}
+
+.line_two {
+	height: 508px;
+	margin-left: 22px;
+}
+
+.line_three {
+	height: 575px;
+	margin-left: 22px;
+}
+
+.line_four {
+	height: 444px;
+	margin-left: 22px;
+}
+
+.line_five {
+	height: 837px;
+	margin-left: 22px;
+}
+
+.pencil {
+	position: relative;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.smile {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.line_six {
+	height: 1516px;
+	margin-left: 22px;
+}
+
+.heart {
+	margin-left: 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1439px) {
+	.container {
+		top: 130px;
+		left: 18px;
+	}
+
+	.line_one {
+		height: 1660px;
+	}
+
+	.line_two {
+		height: 306px;
+	}
+
+	.line_three {
+		height: 427px;
+	}
+
+	.line_four {
+		height: 377px;
+	}
+
+	.line_five {
+		height: 632px;
+	}
+
+	.line_six {
+		height: 974px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.line_one {
+		height: 1636px;
+	}
+
+	.line_two {
+		height: 185px;
+	}
+
+	.line_three {
+		height: 238px;
+	}
+
+	.line_four {
+		height: 198px;
+	}
+
+	.line_five {
+		height: 1046px;
+	}
+
+	.line_six {
+		display: none;
+	}
+
+	.heart {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		display: none;
+	}
+}

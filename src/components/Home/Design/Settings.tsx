@@ -60,7 +60,6 @@ const Settings: FC<T_Props> = ({
 						<p className={classNames( inter.className)}>Width</p>
 						<p>{borderWidth}</p>
 					</div>
-
 					<CalendarBorderWidth
 						borderWidth={borderWidth}
 						setBorderWidth={setBorderWidth}

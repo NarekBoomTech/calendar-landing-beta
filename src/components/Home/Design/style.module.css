@@ -4,6 +4,7 @@
 	flex-direction: column;
 	margin-top: 170px;
 }
+
 .calendar__design__section{
 	display: flex;
 	align-items: flex-start;
@@ -17,7 +18,8 @@
 	color: #272727;
 	font-size: 34px;
 	line-height: 108%;
-	margin: 0;
+	margin-top: 0px;
+	margin-bottom: 10px;
 	}
 .celandar__design__title>span{
 		color: #3E1AAB
@@ -29,12 +31,14 @@
 	color: #958A8A;
 	text-align: center;
 	margin: 0;
-	padding-bottom: 20px
+	padding-bottom: 50px
 }
 .radioRange{
 	display: flex;
 	gap: 10px;
 	flex-direction: column;
+	margin-left: 10px;
+	width: 400px;
   }
   .radioRange>h2{
 	margin: 0;
@@ -46,10 +50,11 @@
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-around;
-	padding: 10px 16px 20px 16px;
+	padding: 8px 16px 20px 16px;
 	background: rgba(62, 26, 171, 0.05);
 	height: 114px;
 	margin-bottom: 6px;
+	border-radius: 5px;
   }
   .inputs__wrapper>div{
 	width: 100%;
@@ -57,13 +62,9 @@
   .input__wrapper,  .input__wrapper__border{
 	justify-content: space-around;
 	width: 100%;
-	height: 58px;
-	gap:10px
+	height: 62px;
   }
 
-  .input__wrapper__border{
-	gap:8px
-  }
 
   .canedar__wrapper{
 	width: 684px;
@@ -77,18 +78,22 @@
 	align-items: center;
 	justify-content: space-between; 
 	width: 100%;
-	margin: 0px;
-	padding-top: 10px
+	padding-top: 0px!important;
+	padding-bottom: 6px
  }
  .input__text__wrapper>p,  .input__wrapper>p{
-	margin: 0px
+	margin: 0px;
+	padding: 0px;
+	
+ }
+ .input__wrapper>p{
+	padding-bottom: 6px
  }
 
 .inputs__wrapper>div>p{
 	margin: 0;
 	padding-bottom: 6px;
 }
-
 .styles__wrapper{
 	width: 100%;
 	display: flex;
@@ -101,15 +106,16 @@
 	line-height: 19px;
 }
 .styles__icons__wrapper{
-	width: 434px;
 	display: flex;
+	align-items: center;
 	flex-direction: row;
 	justify-content: space-between;
+	gap: 20px
 }
 
 .style__icon{
-	width: 50px;
-	height: 50px; 
+	width: 70px;
+	height: 70px; 
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -117,22 +123,22 @@
 	box-sizing: border-box; 
 }
 .style__icon>img{
-    width: 50px!important;
-	height: 50px!important; 
+    width: 70px!important;
+	height: 70px!important; 
 	position: relative;
 }
 .style__icon__simple>img{
-	width: 50px;
-	height: 50px; 
+	width: 70px;
+	height: 70px; 
   }
 .style__icon::before{
 	content: "";
 	border: 2px solid #3899EC;
-	width: 34px;
-	height: 34px;
+	width: 48px;
+	height:48px;
 	position: absolute;
 	transform: rotate(45deg);
-	border-radius: 6px;
+	border-radius: 8px;
 	padding: 0px;
 }
 .skeleton__wrapper{
@@ -145,9 +151,9 @@
 	display: flex;
 	flex-direction: column;
 	gap:30px;
-	width: 515px;
+	width: 400px;
 	height: auto;
-	padding-top: 14px;
+	/* padding-top: 14px; */
 	
 }
 @media (max-width: 1399px) {
@@ -156,24 +162,31 @@
 		gap: 12px
 	}
 	.styles__icons__wrapper{
-		width: 256px;
+		width: 280px;
 	}
 	.calendar__design__section{
 		align-items: flex-start;
-		gap: 14px
+		gap: 24px
 	}
 	.calendar__design__wrapper{
 		margin-top: 80px;
 	}
 	.input__wrapper, .input__wrapper__border{
 		height: 70px;
-		padding: 12px 12px 6px 12px;		 
+		padding: 12px 12px 16px 12px;		 
 	}
 
 	.inputs__wrapper{
 		height: 128px; 
-		padding: 12px 12px 6px 12px;
+		padding: 12px 12px 16px 12px;
 	}
+	.inputs__wrapper>div>p{
+		padding-bottom: 12px;
+	}
+	.input__wrapper>p, .input__text__wrapper{
+		padding-bottom: 12px
+	 }
+
 	.skeleton__wrapper{
 		display: flex;
 		justify-content: space-between;
@@ -185,12 +198,12 @@
 		height: 442px;
 	  }
 	  .style__icon__simple>img{
-		width: 30px;
-		height: 30px; 
+		width: 40px;
+		height: 40px; 
 	  }
 	  .style__icon{
-		width: 30px;
-		height: 30px; 
+		width: 40px;
+		height: 40px; 
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -198,32 +211,44 @@
 		box-sizing: border-box; 
 	}
 	  .style__icon>img{
-		width: 30px!important;
-		height: 30px!important;
+		width: 40px!important;
+		height: 40px!important;
 	  }
 	  .style__icon::before{
 		content: "";
 		border: 2px solid #3899EC;
-		width: 20px;
-		height: 20px;
+		width: 28px;
+		height: 28px;
 		position: absolute;
 		transform: rotate(45deg);
-		border-radius: 5px;
+		border-radius: 6px;
 		 padding: 0px;
 	}
 	  .radioRange{
 		gap: 8px;
+		margin: 0px;
+		width: 340px;
 	  }
 	  .styles__wrapper{
 		
 		gap: 8px
+	}
+	.celandar__design__title{
+		font-size: 30px;
+line-height: 128.5%;
+margin-bottom: 12px;
+	}
+	.calendar__design__subtitle{
+		font-size: 16px;
+line-height: 171%;
+padding-bottom: 40px;
 	}
 	
 }
 
 @media (max-width: 1023px) {
 	.canedar__wrapper{
-		width: 720px!important;
+		width: 648px;
 		height: 530.4px;
 	  }
 	  .calendar__design__section{
@@ -234,14 +259,14 @@
 	  .inputs__wrapper{
 		flex-direction: row;
 		gap: 16px;
-	    height: 66px;		
 		width: 648px;
-		padding: 16px 12px 12px 12px;	
- }
- .input__wrapper, .input__wrapper__border{
-	padding: 16px 12px 12px 12px;	
+		
+	}
+ .input__wrapper, .input__wrapper__border, .inputs__wrapper{
+	padding: 12px 12px 16px 12px;	
+	height: 66px;
 }
-
+ 
  .calendar__design__wrapper{
 	margin-top: 80px;
 }
@@ -258,10 +283,22 @@
 	align-items: center;
 	width: 648px;
 	justify-content: center;
-
+	gap: 12px
 }
 .skeleton__wrapper{
 	gap:20px
 }
+.celandar__design__title{
+	font-size: 24px;
+	line-height: 128.5%;
+	letter-spacing: 1.15833px;
+	margin-bottom: 12px;
+}
+.calendar__design__subtitle{
+	font-size: 16px;
+    line-height: 171%;
+	letter-spacing: 0.15833px;
+	padding-bottom: 24px;
 
+}
 }

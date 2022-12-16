@@ -15,14 +15,14 @@ const Blog = () => {
 
 	return (
 		<section className={styles.section}>
-			{device === 'mobile' && (
+			{device === DEVICE_TYPES.mobile && (
 				<h2 className={classNames(styles.section__header, inter.className)}>
 					Read Our Blog
 				</h2>
 			)}
 
 			<div className={styles.section__slider}>
-				{device !== 'mobile' && (
+				{device !== DEVICE_TYPES.mobile && (
 					<h2 className={classNames(styles.section__header, inter.className)}>
 						Read Our Blog
 					</h2>
@@ -32,7 +32,7 @@ const Blog = () => {
 					<Item />
 				</div>
 
-				{device !== 'mobile' && (
+				{device !== DEVICE_TYPES.mobile && (
 					<div className={styles.setion__button}>
 						<Button
 							skin='dark'
@@ -47,7 +47,7 @@ const Blog = () => {
 				)}
 			</div>
 
-			{device === 'mobile' && (
+			{device === DEVICE_TYPES.mobile && (
 				<div className={styles.setion__button}>
 					<Button
 						skin='dark'

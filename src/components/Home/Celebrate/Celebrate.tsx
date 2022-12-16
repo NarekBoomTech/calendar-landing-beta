@@ -25,11 +25,10 @@ const CelebrateComp = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const isMobile = device === DEVICE_TYPES.mobile;
-
 	const isTablet = device === DEVICE_TYPES.tablet;
 
 	return (
-		<>
+		<div style={{ position: 'relative' }}>
 			<section className={styles.section}>
 				<section className={styles.section__first}>
 					<Image
@@ -66,7 +65,7 @@ const CelebrateComp = () => {
 						</div>
 					</div>
 
-					<div className={styles.setion__compaines}>
+					<div className={styles.section__compaines}>
 						<Image
 							src={GooglePlay}
 							alt='GooglePlay'
@@ -79,13 +78,13 @@ const CelebrateComp = () => {
 					</div>
 				</section>
 
-				<section className={styles.section__main}>
+				<div>
 					<Image
 						src={MainPic}
 						className={styles.section__image}
 						alt='MainPic'
 					/>
-				</section>
+				</div>
 
 				{isOpen && <VideoModal onClose={() => setIsOpen(false)} />}
 			</section>
@@ -97,7 +96,7 @@ const CelebrateComp = () => {
 					alt='MainPic'
 				/>
 			)}
-		</>
+		</div>
 	);
 };
 

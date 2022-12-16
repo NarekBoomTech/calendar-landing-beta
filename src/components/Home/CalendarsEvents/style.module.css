@@ -6,7 +6,7 @@
 	position: relative;
 }
 
-.section > * .section__header {
+.section__header {
 	font-size: 34px;
 	line-height: 108%;
 	text-align: center;
@@ -136,6 +136,9 @@
 
 	.section__views {
 		margin-top: 24px;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 10px;
 	}
 
 	.section__view-button {
@@ -233,6 +236,8 @@
 		max-width: 215px;
 		margin-left: auto;
 		margin-right: auto;
+		row-gap: 10px;
+		justify-content: center;
 	}
 
 	.section__image {

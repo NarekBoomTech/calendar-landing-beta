@@ -6,6 +6,12 @@
 	gap: 56px;
 }
 
+.section__compaines {
+	margin-top: 31px;
+	display: flex;
+	gap: 25px;
+}
+
 .section__celebrate-image {
 	width: 367px;
 	height: 116px;
@@ -58,6 +64,11 @@
 		gap: 24px;
 	}
 
+	.section__compaines {
+		margin-top: 24px;
+		gap: 24px;
+	}
+
 	.section__celebrate-image {
 		width: 285px;
 		height: 90px;
@@ -86,6 +97,10 @@
 		height: auto;
 	}
 
+	.section__compaines {
+		margin-top: 25px;
+	}
+
 	.section__image {
 		width: 332px;
 		margin-top: 65px;
@@ -103,6 +118,17 @@
 @media (max-width: 767px) {
 	.section {
 		display: block;
+	}
+
+	.section__compaines {
+		margin-top: 15px;
+		gap: 10px;
+		justify-content: center;
+	}
+
+	.section__compaines img {
+		width: 81px;
+		height: 19px;
 	}
 
 	.section__celebrate-image {

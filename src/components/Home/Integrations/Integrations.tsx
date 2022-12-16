@@ -1,5 +1,5 @@
 import styles from '@/components/Home/Integrations/style.module.css';
-import IntegrationsImage from '@/assets/images/Home/Integrations/sixth_main.png';
+import IntegrationsImage from '@/assets/images/Home/Integrations/integration.png';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import classNames from 'classnames';

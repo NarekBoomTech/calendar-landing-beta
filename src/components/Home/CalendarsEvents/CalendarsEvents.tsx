@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import styles from '@/components/Home/CalendarsEvents/style.module.css';
 import { Inter } from '@next/font/google';
 import Products from '@/components/Home/Products/Products';
 import classNames from 'classnames';
 import Image from 'next/image';
 import { CALENDAR_FEATURES, CALENDAR_VIEWS } from 'src/helpers/constants/constants';
-import { useState } from 'react';
 
 import Wave from '@/assets/images/Home/CalendarEvents/wave.png';
 
