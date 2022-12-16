@@ -7,7 +7,7 @@ import facebook from '@/assets/images/facebook.svg';
 import twitter from '@/assets/images/twitter.svg';
 import Instagram from '@/assets/images/Instagram.svg';
 import youtube from '@/assets/images/youtube.svg';
-import logo from '@/assets/images/logo.svg';
+import logo from '@/assets/images/Logo.svg';
 type T_Props = {};
 
 const Footer: FC<T_Props> = () => {
