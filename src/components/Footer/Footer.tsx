@@ -18,9 +18,12 @@ const Footer: FC<T_Props> = () => {
 				src={logo}
 				alt='Picture of the author'
 			/>
-			{footerColumns.map((column) => {
-				return <ColumnComponent column={column} />;
-			})}
+			{footerColumns.map((column, key) => (
+				<ColumnComponent
+					key={key}
+					column={column}
+				/>
+			))}
 
 			<div className={styles.social__wrapper}>
 				<h3>FIND US ON SOCIAL</h3>

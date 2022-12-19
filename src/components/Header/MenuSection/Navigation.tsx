@@ -13,13 +13,15 @@ const Navigation: FC<T_Props> = ({ isProductSectionOpen, isMobile, isTablet }) =
 	return (
 		<nav
 			className={
-				isMobile 
+				isMobile
 					? isProductSectionOpen
 						? styles.navigation__wrapper__mobile
 						: styles.navigation__wrapper__mobile__none
-						
-					: isTablet ? isProductSectionOpen ? styles.navigation__wrapper__tablet
-					: styles.navigation__wrapper__tablet__none : styles.navigation__wrapper
+					: isTablet
+					? isProductSectionOpen
+						? styles.navigation__wrapper__tablet
+						: styles.navigation__wrapper__tablet__none
+					: styles.navigation__wrapper
 			}
 		>
 			<div>
@@ -27,8 +29,11 @@ const Navigation: FC<T_Props> = ({ isProductSectionOpen, isMobile, isTablet }) =
 				<div
 					className={isMobile ? styles.feature__wrapper__mobile : styles.feature__wrapper}
 				>
-					{FEATURES_FIELDS.map((field) => (
-						<MenuSectionFieldComponent field={field} />
+					{FEATURES_FIELDS.map((field, key) => (
+						<MenuSectionFieldComponent
+							key={key}
+							field={field}
+						/>
 					))}
 				</div>
 			</div>
@@ -36,8 +41,11 @@ const Navigation: FC<T_Props> = ({ isProductSectionOpen, isMobile, isTablet }) =
 			<div>
 				{!isMobile && <p className={styles.plans__titles}>Plans</p>}
 				<div className={isMobile ? styles.plans__wrapper__mobile : styles.plans__wrapper}>
-					{PLANS_FIELD.map((field) => (
-						<MenuSectionFieldComponent field={field} />
+					{PLANS_FIELD.map((field, key) => (
+						<MenuSectionFieldComponent
+							key={key}
+							field={field}
+						/>
 					))}
 				</div>
 			</div>

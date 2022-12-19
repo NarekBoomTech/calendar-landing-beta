@@ -15,9 +15,10 @@ const ColumnComponent: FC<T_Props> = ({ column }) => {
 				{column.title}
 			</h3>
 			<div className={styles.footer__column__fields__wrapper}>
-				{column.fields.map((field) => {
+				{column.fields.map((field, key) => {
 					return (
 						<a
+							key={key}
 							href={field.href}
 							className={classNames(styles.footer__column__field, inter.className)}
 						>

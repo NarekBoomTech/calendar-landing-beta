@@ -12,14 +12,25 @@ type T_Props = {
 	setCalendarHeaderColor: (argument: T_RGBA) => void;
 };
 
-const Styles: FC<T_Props> = ({ setFieldCalendarByClick, setCalendarHeaderColor, isFilledCalendarByClick }) => {
+const Styles: FC<T_Props> = ({
+	setFieldCalendarByClick,
+	setCalendarHeaderColor,
+	isFilledCalendarByClick
+}) => {
 	return (
 		<div className={styles.styles__wrapper}>
 			<h2 className={classNames(inter.className)}>Style</h2>
 			<div className={styles.styles__icons__wrapper}>
-				{stylesIcons.map((square) => {
+				{stylesIcons.map((square, key) => {
 					return (
-						<div  className={isFilledCalendarByClick.name === square.name ? styles.style__icon : styles.style__icon__simple}>
+						<div
+							key={key}
+							className={
+								isFilledCalendarByClick.name === square.name
+									? styles.style__icon
+									: styles.style__icon__simple
+							}
+						>
 							<Image
 								onClick={() => {
 									setFieldCalendarByClick({
