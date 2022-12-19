@@ -37,8 +37,7 @@
 	display: flex;
 	gap: 10px;
 	flex-direction: column;
-	margin-left: 10px;
-	width: 400px;
+	width: 100%;
   }
   .radioRange>h2{
 	margin: 0;
@@ -68,9 +67,11 @@
 
   .canedar__wrapper{
 	width: 684px;
-	height: 528px;
+	height: 536px;
 	margin: 0!important;
 	padding: 0!important;
+	border-radius: 4px;
+	box-shadow: -4px 4px 15px 2px rgba(234, 236, 255, 0.5);
   }
 
  .input__text__wrapper{
@@ -97,13 +98,16 @@
 .styles__wrapper{
 	width: 100%;
 	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 	flex-direction: column;
 	gap: 10px
 }
+
 .styles__wrapper>h2{
-	margin:0;
 	font-size: 16px;
 	line-height: 19px;
+	margin-bottom: 0
 }
 .styles__icons__wrapper{
 	display: flex;
@@ -151,10 +155,8 @@
 	display: flex;
 	flex-direction: column;
 	gap:30px;
-	width: 400px;
-	height: auto;
-	/* padding-top: 14px; */
-	
+	width: 434px;
+	height: auto;	
 }
 @media (max-width: 1439px) {
 	.settings__wrapper{
@@ -194,8 +196,9 @@
 		flex-direction: row;
 	}
 	.canedar__wrapper{
-		width: 560px;
-		height: 442px;
+		width: 541px;
+		height: 424px;
+		box-shadow: -4px 4px 15px 2px rgba(234, 236, 255, 0.5);
 	  }
 	  .style__icon__simple>img{
 		width: 40px;
@@ -230,8 +233,11 @@
 		width: 340px;
 	  }
 	  .styles__wrapper{
-		
 		gap: 8px
+	}
+	.styles__wrapper>h2{
+		margin: 0
+		/* gap: 8px */
 	}
 	.celandar__design__title{
 		font-size: 30px;
@@ -249,12 +255,15 @@ padding-bottom: 40px;
 @media (max-width: 1023px) {
 	.canedar__wrapper{
 		width: 648px;
-		height: 530.4px;
+		height: auto;
+		box-shadow: -4px 4px 15px 2px rgba(234, 236, 255, 0.5);
+		border-radius: 4px;
 	  }
 	  .calendar__design__section{
 		flex-direction: column-reverse;
 		align-items: center;
-		gap: 24px
+		gap: 24px;
+		/* width:648px; */
 	  } 
 	  .inputs__wrapper{
 		flex-direction: row;
@@ -269,6 +278,7 @@ padding-bottom: 40px;
  
  .calendar__design__wrapper{
 	margin-top: 80px;
+	align-items: center;
 }
 .settings__wrapper{
 	width: 648px;

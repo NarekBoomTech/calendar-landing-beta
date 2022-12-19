@@ -44,6 +44,7 @@ export type T_NavigationField = {
 	name: string 
 	icon: ImageProps['src'];
 	color: T_RGBA
+	background: T_RGBA
 }
 
 export type T_FooterFields = {

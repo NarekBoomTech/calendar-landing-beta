@@ -268,11 +268,11 @@ export const CALENDAR_VIEWS = [
 ];
 
 export const stylesIcons: T_CalendarStyles[] = [
-	{name: 'Lilac', icon: Lilac, color: {r: 103, g: 64, b: 234, a: 1}},
-	{name: 'Green', icon: Green, color: {r: 29, g: 207, b: 169, a: 1}},
-	{name: 'Yellow', icon: Yellow, color: {r: 255, g: 182, b: 18, a: 1}},
-	{name: 'Pink', icon: Pink, color:{r: 255, g: 170, b: 236, a: 1}},
-	{name: 'Blue', icon: Blue,color: {r: 29, g: 25, b: 238, a: 1}},
+	{name: 'Lilac', icon: Lilac, color: {r: 103, g: 64, b: 234, a: 1}, background:{r: 255, g: 255, b: 255, a: 1}},
+	{name: 'Green', icon: Green, color: {r: 29, g: 207, b: 169, a: 1}, background:{r: 255, g: 255, b: 255, a: 1}},
+	{name: 'Yellow', icon: Yellow, color: {r: 255, g: 182, b: 18, a: 1}, background:{r: 255, g: 255, b: 255, a: 1}},
+	{name: 'Pink', icon: Pink, color:{r: 255, g: 170, b: 236, a: 1}, background:{r: 255, g: 242, b: 252, a: 1}},
+	{name: 'Blue', icon: Blue,color: {r: 29, g: 25, b: 238, a: 1}, background:{r: 247, g: 247, b: 254, a: 1}},
 ]
 
 export const footerColumns:T_FooterFields[] = [

@@ -13,7 +13,8 @@ function Design() {
 	const [isFilledCalendarByClick, setFieldCalendarByClick] = useState<T_CalendarStyles>({
 		icon: Lilac,
 		name: 'Lilac',
-		color: { r: 103, g: 64, b: 224, a: 1 }
+		color: { r: 103, g: 64, b: 224, a: 1 },
+		background: { r: 255, g: 255, b: 255, a: 1 }
 	});
 	const [borderWidth, setBorderWidth] = useState<string>('1');
 	const [calendarHeaderColor, setCalendarHeaderColor] = useState<T_RGBA>({
@@ -37,6 +38,7 @@ function Design() {
 					borderColor={borderColor}
 					calendarHeaderColor={calendarHeaderColor}
 					borderWidth={borderWidth}
+					background={isFilledCalendarByClick.background}
 				/>
 				<Settings
 					setFieldCalendarByClick={setFieldCalendarByClick}

@@ -36,7 +36,8 @@ const Styles: FC<T_Props> = ({
 									setFieldCalendarByClick({
 										name: square.name,
 										icon: square.icon,
-										color: square.color
+										color: square.color,
+										background: square.background
 									});
 									setCalendarHeaderColor(square.color);
 								}}
