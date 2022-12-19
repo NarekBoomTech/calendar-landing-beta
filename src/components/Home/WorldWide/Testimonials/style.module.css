@@ -1,9 +1,13 @@
 .section {
 	display: flex;
 	justify-content: center;
-	gap: 28px;
+	gap: 0px;
 	position: relative;
 	padding-top: 200px;
+}
+
+.section__text__wrapper {
+	width: 590px;
 }
 
 .section__globus {
@@ -134,6 +138,10 @@
 		gap: 34px;
 	}
 
+	.section__text__wrapper {
+		width: 422px;
+	}
+
 	.section__image {
 		top: 154px;
 	}
@@ -206,6 +214,10 @@
 		overflow: inherit;
 	}
 
+	.section__text__wrapper {
+		width: 338px;
+	}
+
 	.section__image {
 		top: 0px;
 		height: 486px;
@@ -256,6 +268,10 @@
 	.card {
 		width: 160px;
 		padding: 20px;
+	}
+
+	.section__text__wrapper {
+		width: 100%;
 	}
 
 	.section__cards > .card {

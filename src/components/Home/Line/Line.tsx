@@ -39,7 +39,6 @@ const Line = () => {
 				className={styles.circle}
 				alt='A'
 			/>
-
 			<div className={classNames(styles.line_four, styles.line)}></div>
 
 			<Image
@@ -63,6 +62,7 @@ const Line = () => {
 				alt='heart'
 				className={styles.heart}
 			/>
+			{/* */}
 		</div>
 	);
 };

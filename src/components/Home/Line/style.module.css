@@ -26,12 +26,12 @@
 }
 
 .line_two {
-	height: 508px;
+	height: 503px;
 	margin-left: 22px;
 }
 
 .line_three {
-	height: 575px;
+	height: 594px;
 	margin-left: 22px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .line_five {
-	height: 837px;
+	height: 808px;
 	margin-left: 22px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .line_six {
-	height: 1516px;
+	height: 1554px;
 	margin-left: 22px;
 }
 
@@ -72,11 +72,12 @@
 @media (max-width: 1439px) {
 	.container {
 		top: 40px;
+		/* left: -18px; */
 		left: -48px;
 	}
 
 	.line_one {
-		height: 1660px;
+		height: 1615px;
 	}
 
 	.line_two {
@@ -84,49 +85,45 @@
 	}
 
 	.line_three {
-		height: 427px;
+		height: 376px;
 	}
 
 	.line_four {
-		height: 377px;
+		height: 271px;
 	}
 
 	.line_five {
-		height: 632px;
+		height: 620px;
 	}
 
 	.line_six {
-		height: 974px;
+		height: 1055px;
 	}
 }
 
 @media (max-width: 1023px) {
 	.line_one {
-		height: 1636px;
+		height: 1583px;
 	}
 
 	.line_two {
-		height: 185px;
+		height: 189px;
 	}
 
 	.line_three {
-		height: 238px;
+		height: 245px;
 	}
 
 	.line_four {
-		height: 198px;
+		height: 204px;
 	}
 
 	.line_five {
-		height: 1046px;
+		height: 1009px;
 	}
 
 	.line_six {
-		display: none;
-	}
-
-	.heart {
-		display: none;
+		height: 979px;
 	}
 }
 
