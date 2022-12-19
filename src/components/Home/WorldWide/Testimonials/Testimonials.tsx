@@ -16,6 +16,7 @@ const Testimonials = () => {
 		<>
 			<section className={styles.section}>
 				<div className={styles.section__globus}></div>
+
 				<section className={styles.section__text__wrapper}>
 					<h2 className={classNames(styles.section__header, inter.className)}>
 						Create your event wordwide

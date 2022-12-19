@@ -13,6 +13,18 @@ export type T_Testimonials = {
 	isMargin?: boolean;
 };
 
+export type T_CalendarViews = {
+	name: string;
+	image: ImageProps['src'];
+};
+
+export type T_CalendarFeatures = {
+	id: number;
+	name: string;
+	text: string;
+	image: ImageProps['src'];
+};
+
 export type T_CardReviews = {
 	text: string;
 	avatar: ImageProps['src'];
@@ -33,21 +45,22 @@ export type T_NavigationField = {
 	icon: ImageProps['src'];
 	color: string;
 };
- export type T_RGBA = {
-    r: number;
-    g: number;
-    b: number;
-    a: number;
-  };
 
-  export type T_CalendarStyles = {
-	name: string 
+export type T_RGBA = {
+	r: number;
+	g: number;
+	b: number;
+	a: number;
+};
+
+export type T_CalendarStyles = {
+	name: string;
 	icon: ImageProps['src'];
-	color: T_RGBA
-	background: T_RGBA
-}
+	color: T_RGBA;
+	background: T_RGBA;
+};
 
 export type T_FooterFields = {
-	title: string, 
-	fields: {name: string, href: string}[]
-}
+	title: string;
+	fields: { name: string; href: string }[];
+};

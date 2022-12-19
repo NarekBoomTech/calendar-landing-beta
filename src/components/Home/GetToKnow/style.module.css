@@ -29,7 +29,7 @@
 	line-height: 108%;
 }
 
-@media (max-width: 1441px) {
+@media (max-width: 1439px) {
 	.section {
 		margin-top: 80px;
 	}
@@ -46,7 +46,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 	.section {
 		margin-top: 80px;
 	}
@@ -63,7 +63,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.section {
 		margin-top: 40px;
 	}

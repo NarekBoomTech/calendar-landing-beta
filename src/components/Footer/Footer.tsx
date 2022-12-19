@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import styles from '@/components/Footer/style.module.css';
 import { footerColumns } from 'src/helpers/constants/constants';
-import ColumnComponent from '@/components/Footer/ColumnComponent';
 import Image from 'next/image';
 import facebook from '@/assets/images/facebook.svg';
 import twitter from '@/assets/images/twitter.svg';
 import Instagram from '@/assets/images/Instagram.svg';
 import youtube from '@/assets/images/youtube.svg';
 import logo from '@/assets/images/Logo.svg';
+import ColumnComponent from './ColumnComponent';
 type T_Props = {};
 
 const Footer: FC<T_Props> = () => {
@@ -26,7 +26,7 @@ const Footer: FC<T_Props> = () => {
 			))}
 
 			<div className={styles.social__wrapper}>
-				<h3>FIND US ON SOCIAL</h3>
+				<h3>FIND US ON SOCIAL MEDIA</h3>
 				<div className={styles.social__icon__wrapper}>
 					<Image
 						className={styles.social__icon}

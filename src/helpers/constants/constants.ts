@@ -1,4 +1,4 @@
-import { T_FooterFields } from 'src/helpers/types/types';
+import { T_CalendarFeatures, T_CalendarViews, T_FooterFields } from 'src/helpers/types/types';
 import FirstBlock from '@/assets/images/Home/Products/first_block.png';
 import SecondBlock from '@/assets/images/Home/Products/second_block.png';
 import ThirdBlock from '@/assets/images/Home/Products/third_section.png';
@@ -201,46 +201,46 @@ export const FEATURES_FIELDS: T_NavigationField[] = [
 	}
 ];
 
-export const CALENDAR_FEATURES = [
+export const CALENDAR_FEATURES: T_CalendarFeatures[] = [
 	{
 		id: 1,
 		name: 'Calendar Views',
-		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event.',
+		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event.',
 		image: ClanedarImage
 	},
 	{
 		id: 2,
 		name: 'Registration',
-		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 Choose your favorite view that would be most convinient for your purposes and to promote your event. 123 ',
+		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event. 123 Choose your favorite view that would be the most convenient for your purposes and would promote your event. 123 Choose your favorite view that would be the most convenient for your purposes and would promote your event. 123 Choose your favorite view that would be the most convenient for your purposes and would promote your event. 123 ',
 		image: Clanedar2Image
 	},
 	{
 		id: 3,
 		name: 'Ticketing',
-		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 213 123',
+		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event. 213 123',
 		image: ClanedarImage
 	},
 	{
 		id: 4,
 		name: 'Subscription',
-		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 123213',
+		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event. 123213',
 		image: ClanedarImage
 	},
 	{
 		id: 5,
 		name: 'Add Event',
-		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event. 213213',
+		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event. 213213',
 		image: ClanedarImage
 	},
 	{
 		id: 6,
 		name: 'Import and Export Event',
-		text: 'Choose your favorite view that would be most convinient for your purposes and to promote your event.  gfdg',
+		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event.  gfdg',
 		image: ClanedarImage
 	}
 ];
 
-export const CALENDAR_VIEWS = [
+export const CALENDAR_VIEWS: T_CalendarViews[] = [
 	{
 		name: 'Monthly',
 		image: ClanedarImage
@@ -268,22 +268,63 @@ export const CALENDAR_VIEWS = [
 ];
 
 export const stylesIcons: T_CalendarStyles[] = [
-	{name: 'Lilac', icon: Lilac, color: {r: 103, g: 64, b: 234, a: 1}, background:{r: 255, g: 255, b: 255, a: 1}},
-	{name: 'Green', icon: Green, color: {r: 29, g: 207, b: 169, a: 1}, background:{r: 255, g: 255, b: 255, a: 1}},
-	{name: 'Yellow', icon: Yellow, color: {r: 255, g: 182, b: 18, a: 1}, background:{r: 255, g: 255, b: 255, a: 1}},
-	{name: 'Pink', icon: Pink, color:{r: 255, g: 170, b: 236, a: 1}, background:{r: 255, g: 242, b: 252, a: 1}},
-	{name: 'Blue', icon: Blue,color: {r: 29, g: 25, b: 238, a: 1}, background:{r: 247, g: 247, b: 254, a: 1}},
-]
+	{
+		name: 'Lilac',
+		icon: Lilac,
+		color: { r: 103, g: 64, b: 234, a: 1 },
+		background: { r: 255, g: 255, b: 255, a: 1 }
+	},
+	{
+		name: 'Green',
+		icon: Green,
+		color: { r: 29, g: 207, b: 169, a: 1 },
+		background: { r: 255, g: 255, b: 255, a: 1 }
+	},
+	{
+		name: 'Yellow',
+		icon: Yellow,
+		color: { r: 255, g: 182, b: 18, a: 1 },
+		background: { r: 255, g: 255, b: 255, a: 1 }
+	},
+	{
+		name: 'Pink',
+		icon: Pink,
+		color: { r: 255, g: 170, b: 236, a: 1 },
+		background: { r: 255, g: 242, b: 252, a: 1 }
+	},
+	{
+		name: 'Blue',
+		icon: Blue,
+		color: { r: 29, g: 25, b: 238, a: 1 },
+		background: { r: 247, g: 247, b: 254, a: 1 }
+	}
+];
 
-export const footerColumns:T_FooterFields[] = [
-	{title: 'PRODUCT',
-	fields: [{name: 'Features', href: '#'}, {name:'About Boom Calendar', href: '#'}, {name:'Managing Your Event', href: '#'}, {name:'Collaborating with Boom Calendar', href: '#'} ]	
-},
-{	title: 'Eventtmaker',
-	fields: [{name:'Create Your Own Event', href: '#'}, {name:'Subscription' , href: '#'}, {name:'Tickets', href: '#'}]	
-},
-{ 	title: 'Integrations ',
-	fields: [{name:'Features', href: '#'}, {name:'About Boom Calendar', href: '#'}, {name:'Managing Your Event', href: '#'}, {name:'Collaborating with Boom Calendar', href: '#'} ]	
-},
-]
-
+export const footerColumns: T_FooterFields[] = [
+	{
+		title: 'PRODUCT',
+		fields: [
+			{ name: 'Features', href: '#' },
+			{ name: 'About Boom Calendar', href: '#' },
+			{ name: 'Managing Your Event', href: '#' },
+			{ name: 'Collaborating with Boom Calendar', href: '#' }
+		]
+	},
+	{
+		title: 'Eventtmaker',
+		fields: [
+			{ name: 'Create Your Own Event', href: '#' },
+			{ name: 'Subscription', href: '#' },
+			{ name: 'Tickets', href: '#' }
+		]
+	},
+	{
+		title: 'Integrations ',
+		fields: [
+			{ name: 'Features', href: '#' },
+			{ name: 'About Boom Calendar', href: '#' },
+			{ name: 'Managing Your Event', href: '#' },
+			{ name: 'Collaborating with Boom Calendar', href: '#' }
+		]
+	}
+];

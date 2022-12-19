@@ -7,6 +7,7 @@
 		rgba(140, 110, 230, 0.4) 67.22%,
 		rgba(147, 108, 231, 0.4) 100%
 	);
+	position: relative;
 }
 
 @media (max-width: 1439px) {

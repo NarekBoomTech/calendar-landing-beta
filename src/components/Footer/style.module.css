@@ -1,7 +1,7 @@
 .footer{
 width: calc(100%-96px);
 padding-top: 154px;
-padding-bottom: 100px;
+padding-bottom: 32px;
 background-color: white;
 display: flex;
 align-items: flex-start;
@@ -34,6 +34,7 @@ flex-wrap: wrap;
     font-size: 15px;
     line-height: 17px;
     color: #0C0C0C;
+    font-family: '__Inter_9c9965', '__Inter_Fallback_9c9965';
 }
 .footer__column__fields__wrapper{
     gap: 12px;
@@ -69,6 +70,8 @@ flex-wrap: wrap;
     font-size: 10px;
     line-height: 142.7%;
     color: #606060;
+    font-family: '__Inter_9c9965';
+    
 }
 
 .social__icon__wrapper{
@@ -97,10 +100,9 @@ flex-wrap: wrap;
         gap: 12px;
     }
     .social__wrapper{
-        width: 216px;
+        width:228px;
         margin-left: -36px;
         gap: 24px;
-        /* border: 1px solid black; */
         padding-left: 30px;
     }
     .footer__logo{
@@ -124,14 +126,17 @@ flex-wrap: wrap;
     }
     .footer__privacy>div{
         flex-direction: row;
-        gap:12px
+        gap:24px
     }
     .footer__privacy{
         flex-direction: row;
-        gap:12px
+        gap:24px
     }
     .social__wrapper{
-        gap: 24px
+        gap: 24px;
+        margin: 0;
+        margin-top: -26px;
+
     }
     .footer{
         width: calc(100%-100px);
@@ -141,13 +146,17 @@ flex-wrap: wrap;
 
 @media (max-width: 767px) {
     .footer{
-        width: 384px;
-        margin: 0 auto
+        width: calc(100% - 36px);
+        margin: 0 auto;
+        justify-content: space-between
     }
     .social__wrapper{
-        width: 180px;
+        width: 160px;
         align-items: flex-start;
-    justify-content: center;
+        justify-content: flex-start;
+        gap: 24px;
+        padding-left: 0px;
+    
     }
     .footer__privacy>div{
         flex-direction: column;
@@ -157,13 +166,39 @@ flex-wrap: wrap;
         flex-direction: row;
         gap:12px
     }
-    .social__wrapper{
-        gap: 24px
-    }
+  
     .footer__logo{
         display: none;
     }
     .footer__column__wrapper, .footer__column__fields__wrapper{
         width: 160px;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer{
+        justify-content: flex-start;
+        padding-left: 0px;
+        gap: 32px;
+        padding-top: 32px;
+    }
+    .footer__column__wrapper, .footer__column__fields__wrapper{
+        width: 288px;
+        gap: 16px
+    }
+    .footer__privacy>div{
+        flex-direction: column;
+        gap:12px
+    }
+    .footer__privacy{
+        flex-direction: column;
+        gap: 12px
+    }
+    .social__wrapper{
+        gap: 16px;
+       
+    }
+    .footer__privacy>div>a{
+        font-size: 13px;
     }
 }

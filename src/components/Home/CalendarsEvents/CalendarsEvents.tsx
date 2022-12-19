@@ -3,10 +3,11 @@ import styles from '@/components/Home/CalendarsEvents/style.module.css';
 import { Inter } from '@next/font/google';
 import Products from '@/components/Home/Products/Products';
 import classNames from 'classnames';
-import Image from 'next/image';
+import Image, { ImageProps } from 'next/image';
 import { CALENDAR_FEATURES, CALENDAR_VIEWS } from 'src/helpers/constants/constants';
 
 import Wave from '@/assets/images/Home/CalendarEvents/wave.png';
+import Shape from '../Shape/Shape';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +19,7 @@ const CalendarsEvents = () => {
 		text: CALENDAR_FEATURES[0].text
 	});
 
-	const [image, setImage] = useState(CALENDAR_FEATURES[0].image);
+	const [image, setImage] = useState<ImageProps['src']>(CALENDAR_FEATURES[0].image);
 
 	const [views, setViews] = useState({
 		name: CALENDAR_VIEWS[0].name
@@ -26,6 +27,8 @@ const CalendarsEvents = () => {
 
 	return (
 		<section className={styles.section}>
+			<Shape top={true} />
+
 			<section className={styles.section__calendar}>
 				<h2 className={classNames(styles.section__header, inter.className)}>
 					It is all about making events with fun

@@ -16,6 +16,7 @@ import { Inter } from '@next/font/google';
 import VideoModal from '@/components/Modal/VideoModal';
 import { useState } from 'react';
 import Line from '../Line/Line';
+import Shape from '../Shape/Shape';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,53 +32,71 @@ const CelebrateComp = () => {
 	return (
 		<div style={{ position: 'relative' }}>
 			<section className={styles.section}>
+				<Shape />
+
 				<section className={styles.section__first}>
 					<Line />
 
-					<Image
-						className={styles['section__celebrate-image']}
-						src={isMobile ? CelebrateMobile : Celebrate}
-						alt='Celebrate'
-					/>
-
-					<p className={classNames(styles.section__text, inter.className)}>
-						Discover milions of events, get alerts about your favorite artists, teams,
-						plays and more. Plus always secure, effortless ticketing.
-					</p>
-
-					<div className={styles.section__flex}>
-						<Button
-							skin='dark'
-							size={isMobile ? 'small' : isTablet ? 'medium' : 'big'}
-							onClick={() => redirect(process.env.SIGN_UP)}
+					{isMobile && (
+						<svg
+							viewBox='0 0 1280 84'
+							fill='none'
+							xmlns='http://www.w3.org/2000/svg'
+							className={styles.aaaaa}
 						>
-							Get Start
-						</Button>
+							<path
+								d='M0 0C0 0 224 84 640 84C1056 84 1280 0 1280 0V84H0V0Z'
+								fill='white'
+							></path>
+						</svg>
+					)}
 
-						<div
-							className={styles['section__watch-container']}
-							onClick={() => setIsOpen(true)}
-						>
-							<p className={classNames(styles.section__watch, inter.className)}>
-								Watch video
-							</p>
+					<div className={styles.section__first_container}>
+						<Image
+							className={styles['section__celebrate-image']}
+							src={isMobile ? CelebrateMobile : Celebrate}
+							alt='Celebrate'
+						/>
+
+						<p className={classNames(styles.section__text, inter.className)}>
+							Discover milions of events, get alerts about your favorite artists,
+							teams, plays and more. Plus always secure, effortless ticketing.
+						</p>
+
+						<div className={styles.section__flex}>
+							<Button
+								skin='dark'
+								size={isMobile ? 'small' : isTablet ? 'medium' : 'big'}
+								onClick={() => redirect(process.env.SIGN_UP)}
+							>
+								Get Start
+							</Button>
+
+							<div
+								className={styles['section__watch-container']}
+								onClick={() => setIsOpen(true)}
+							>
+								<p className={classNames(styles.section__watch, inter.className)}>
+									Watch video
+								</p>
+								<Image
+									alt='PlayIon'
+									src={PlaIcon}
+								/>
+							</div>
+						</div>
+
+						<div className={styles.section__compaines}>
 							<Image
-								alt='PlayIon'
-								src={PlaIcon}
+								src={GooglePlay}
+								alt='GooglePlay'
+							/>
+
+							<Image
+								src={AppleStore}
+								alt='AppleStore'
 							/>
 						</div>
-					</div>
-
-					<div className={styles.section__compaines}>
-						<Image
-							src={GooglePlay}
-							alt='GooglePlay'
-						/>
-
-						<Image
-							src={AppleStore}
-							alt='AppleStore'
-						/>
 					</div>
 				</section>
 

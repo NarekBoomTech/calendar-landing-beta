@@ -1,6 +1,5 @@
 import { FC, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-
 import styles from '@/components/Modal/style.module.css';
 
 type T_Props = {
