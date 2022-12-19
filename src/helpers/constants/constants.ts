@@ -18,9 +18,14 @@ import Basic from '@/assets/images/Basic.svg';
 import Premium from '@/assets/images/Premium.svg';
 import Busines from '@/assets/images/Business.svg';
 import Ticketing from '@/assets/images/Ticketing.svg';
-import ClanedarImage from '@/assets/images/Home/CalendarEvents/calendar.png';
+import CalendarView from '@/assets/images/Home/CalendarEvents/calendar_view.svg';
+import MonthlyView from '@/assets/images/Home/CalendarEvents/monthly_view.svg';
+import WeeklyDailyView from '@/assets/images/Home/CalendarEvents/weekly_daily_views.svg';
+import AgendaView from '@/assets/images/Home/CalendarEvents/agenda_view.svg';
+import CardView from '@/assets/images/Home/CalendarEvents/card_view.svg';
+import MapView from '@/assets/images/Home/CalendarEvents/map_view.svg';
+import SubscriptionImage from '@/assets/images/Home/CalendarEvents/subscription.svg';
 import Clanedar2Image from '@/assets/images/Home/CalendarEvents/calendar_2.png';
-import Clanedar3Image from '@/assets/images/Home/CalendarEvents/calendar_3.png';
 import Lilac from '@/assets/images/Lilac.svg';
 import Green from '@/assets/images/Green.svg';
 import Yellow from '@/assets/images/Yellow.svg';
@@ -206,7 +211,7 @@ export const CALENDAR_FEATURES: T_CalendarFeatures[] = [
 		id: 1,
 		name: 'Calendar Views',
 		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event.',
-		image: ClanedarImage
+		image: MonthlyView
 	},
 	{
 		id: 2,
@@ -218,52 +223,52 @@ export const CALENDAR_FEATURES: T_CalendarFeatures[] = [
 		id: 3,
 		name: 'Ticketing',
 		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event. 213 123',
-		image: ClanedarImage
+		image: CalendarView
 	},
 	{
 		id: 4,
 		name: 'Subscription',
 		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event. 123213',
-		image: ClanedarImage
+		image: SubscriptionImage
 	},
 	{
 		id: 5,
 		name: 'Add Event',
 		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event. 213213',
-		image: ClanedarImage
+		image: CalendarView
 	},
 	{
 		id: 6,
 		name: 'Import and Export Event',
 		text: 'Choose your favorite view that would be the most convenient for your purposes and would promote your event.  gfdg',
-		image: ClanedarImage
+		image: CalendarView
 	}
 ];
 
 export const CALENDAR_VIEWS: T_CalendarViews[] = [
 	{
 		name: 'Monthly',
-		image: ClanedarImage
+		image: MonthlyView
 	},
 	{
 		name: 'Daily',
-		image: Clanedar3Image
+		image: WeeklyDailyView
 	},
 	{
 		name: 'Weekly',
-		image: ClanedarImage
+		image: WeeklyDailyView
 	},
 	{
 		name: 'Agenda',
-		image: ClanedarImage
+		image: AgendaView
 	},
 	{
 		name: 'Card',
-		image: ClanedarImage
+		image: CardView
 	},
 	{
 		name: 'Map',
-		image: ClanedarImage
+		image: MapView
 	}
 ];
 
