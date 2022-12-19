@@ -23,6 +23,8 @@
 .section__compaines {
 	margin-top: 31px;
 	display: flex;
+	align-items: center;
+	border: 1px solid red;
 	gap: 25px;
 }
 
@@ -40,6 +42,7 @@
 }
 
 .section__text {
+	color: #162d3d;
 	font-size: 20px;
 	line-height: 26px;
 	width: 568px;

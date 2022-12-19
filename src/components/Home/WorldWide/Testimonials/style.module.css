@@ -26,7 +26,6 @@
 .section__image {
 	width: 100%;
 	position: relative;
-	height: 783.93px;
 	top: 244px;
 }
 
@@ -35,6 +34,7 @@
 	line-height: 26px;
 	margin: 15px 0px 0px 0px;
 	max-width: 609px;
+	color: #162d3d;
 }
 
 .section__statistics {
@@ -135,7 +135,6 @@
 	}
 
 	.section__image {
-		height: 100%;
 		top: 154px;
 	}
 

@@ -30,6 +30,7 @@
 	line-height: 30px;
 	max-width: 568px;
 	margin-top: 15px;
+	color: #162d3d;
 }
 
 .block {
@@ -201,9 +202,6 @@
 
 	.block__image {
 		margin-top: 15px !important;
-		/* width: 100% !important;
-		max-width: 100% !important;
-		height: auto !important; */
 	}
 
 	.block:not(:first-child) {

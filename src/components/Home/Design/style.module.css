@@ -1,50 +1,52 @@
-.calendar__design__wrapper{
+.calendar__design__wrapper {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	margin-top: 170px;
 }
 
-.calendar__design__section{
+.calendar__design__section {
 	display: flex;
 	align-items: flex-start;
 	width: 100%;
 	height: auto;
 	justify-content: center;
-	gap:52px;
+	gap: 52px;
 	margin: 0;
 }
-.celandar__design__title{
+.celandar__design__title {
 	color: #272727;
 	font-size: 34px;
 	line-height: 108%;
 	margin-top: 0px;
 	margin-bottom: 10px;
-	}
-.celandar__design__title>span{
-		color: #3E1AAB
-	}
-.calendar__design__subtitle{
+}
+.celandar__design__title > span {
+	color: #3e1aab;
+}
+.calendar__design__subtitle {
 	font-size: 20px;
 	line-height: 171%;
 	text-align: center;
-	color: #958A8A;
+	color: #958a8a;
 	text-align: center;
 	margin: 0;
-	padding-bottom: 50px
+	padding-bottom: 50px;
 }
-.radioRange{
+.radioRange {
 	display: flex;
 	gap: 10px;
 	flex-direction: column;
 	width: 100%;
-  }
-  .radioRange>h2{
+}
+.radioRange > h2 {
 	margin: 0;
 	font-size: 16px;
 	line-height: 19px;
-  }
-  .inputs__wrapper,  .input__wrapper,  .input__wrapper__border {
+}
+.inputs__wrapper,
+.input__wrapper,
+.input__wrapper__border {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -54,261 +56,261 @@
 	height: 114px;
 	margin-bottom: 6px;
 	border-radius: 5px;
-  }
-  .inputs__wrapper>div{
+}
+.inputs__wrapper > div {
 	width: 100%;
-  }
-  .input__wrapper,  .input__wrapper__border{
+}
+.input__wrapper,
+.input__wrapper__border {
 	justify-content: space-around;
 	width: 100%;
 	height: 62px;
-  }
+}
 
-
-  .canedar__wrapper{
+.canedar__wrapper {
 	width: 684px;
 	height: 536px;
-	margin: 0!important;
-	padding: 0!important;
+	margin: 0 !important;
+	padding: 0 !important;
 	border-radius: 4px;
 	box-shadow: -4px 4px 15px 2px rgba(234, 236, 255, 0.5);
-  }
+}
 
- .input__text__wrapper{
+.input__text__wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: space-between; 
+	justify-content: space-between;
 	width: 100%;
-	padding-top: 0px!important;
-	padding-bottom: 6px
- }
- .input__text__wrapper>p,  .input__wrapper>p{
+	padding-top: 0px !important;
+	padding-bottom: 6px;
+}
+.input__text__wrapper > p,
+.input__wrapper > p {
 	margin: 0px;
 	padding: 0px;
-	
- }
- .input__wrapper>p{
-	padding-bottom: 6px
- }
+}
+.input__wrapper > p {
+	padding-bottom: 6px;
+}
 
-.inputs__wrapper>div>p{
+.inputs__wrapper > div > p {
 	margin: 0;
 	padding-bottom: 6px;
 }
-.styles__wrapper{
+.styles__wrapper {
 	width: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	gap: 10px
+	gap: 10px;
 }
 
-.styles__wrapper>h2{
+.styles__wrapper > h2 {
 	font-size: 16px;
 	line-height: 19px;
-	margin-bottom: 0
+	margin-bottom: 0;
 }
-.styles__icons__wrapper{
+.styles__icons__wrapper {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: space-between;
-	gap: 20px
+	gap: 20px;
 }
 
-.style__icon{
+.style__icon {
 	width: 70px;
-	height: 70px; 
+	height: 70px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
-.style__icon>img{
-    width: 70px!important;
-	height: 70px!important; 
+.style__icon > img {
+	width: 70px !important;
+	height: 70px !important;
 	position: relative;
 }
-.style__icon__simple>img{
+.style__icon__simple > img {
 	width: 70px;
-	height: 70px; 
-  }
-.style__icon::before{
-	content: "";
-	border: 2px solid #3899EC;
+	height: 70px;
+}
+.style__icon::before {
+	content: '';
+	border: 2px solid #3899ec;
 	width: 48px;
-	height:48px;
+	height: 48px;
 	position: absolute;
 	transform: rotate(45deg);
 	border-radius: 8px;
 	padding: 0px;
 }
-.skeleton__wrapper{
+.skeleton__wrapper {
 	display: flex;
 	gap: 14px;
 	flex-direction: column;
 }
 
-.settings__wrapper{
+.settings__wrapper {
 	display: flex;
 	flex-direction: column;
-	gap:30px;
+	gap: 30px;
 	width: 434px;
-	height: auto;	
+	height: auto;
 }
 @media (max-width: 1439px) {
-	.settings__wrapper{
-		width:340px;
-		gap: 12px
+	.settings__wrapper {
+		width: 340px;
+		gap: 12px;
 	}
-	.styles__icons__wrapper{
+	.styles__icons__wrapper {
 		width: 280px;
 	}
-	.calendar__design__section{
+	.calendar__design__section {
 		align-items: flex-start;
-		gap: 24px
+		gap: 24px;
 	}
-	.calendar__design__wrapper{
+	.calendar__design__wrapper {
 		margin-top: 80px;
 	}
-	.input__wrapper, .input__wrapper__border{
+	.input__wrapper,
+	.input__wrapper__border {
 		height: 70px;
-		padding: 12px 12px 16px 12px;		 
-	}
-
-	.inputs__wrapper{
-		height: 128px; 
 		padding: 12px 12px 16px 12px;
 	}
-	.inputs__wrapper>div>p{
+
+	.inputs__wrapper {
+		height: 128px;
+		padding: 12px 12px 16px 12px;
+	}
+	.inputs__wrapper > div > p {
 		padding-bottom: 12px;
 	}
-	.input__wrapper>p, .input__text__wrapper{
-		padding-bottom: 12px
-	 }
+	.input__wrapper > p,
+	.input__text__wrapper {
+		padding-bottom: 12px;
+	}
 
-	.skeleton__wrapper{
+	.skeleton__wrapper {
 		display: flex;
 		justify-content: space-between;
 		gap: 18px;
 		flex-direction: row;
 	}
-	.canedar__wrapper{
+	.canedar__wrapper {
 		width: 541px;
 		height: 424px;
 		box-shadow: -4px 4px 15px 2px rgba(234, 236, 255, 0.5);
-	  }
-	  .style__icon__simple>img{
+	}
+	.style__icon__simple > img {
 		width: 40px;
-		height: 40px; 
-	  }
-	  .style__icon{
+		height: 40px;
+	}
+	.style__icon {
 		width: 40px;
-		height: 40px; 
+		height: 40px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
-		box-sizing: border-box; 
+		box-sizing: border-box;
 	}
-	  .style__icon>img{
-		width: 40px!important;
-		height: 40px!important;
-	  }
-	  .style__icon::before{
-		content: "";
-		border: 2px solid #3899EC;
+	.style__icon > img {
+		width: 40px !important;
+		height: 40px !important;
+	}
+	.style__icon::before {
+		content: '';
+		border: 2px solid #3899ec;
 		width: 28px;
 		height: 28px;
 		position: absolute;
 		transform: rotate(45deg);
 		border-radius: 6px;
-		 padding: 0px;
+		padding: 0px;
 	}
-	  .radioRange{
+	.radioRange {
 		gap: 8px;
 		margin: 0px;
 		width: 340px;
-	  }
-	  .styles__wrapper{
-		gap: 8px
 	}
-	.styles__wrapper>h2{
-		margin: 0
-		/* gap: 8px */
+	.styles__wrapper {
+		gap: 8px;
 	}
-	.celandar__design__title{
+	.styles__wrapper > h2 {
+		margin: 0;
+	}
+	.celandar__design__title {
 		font-size: 30px;
-line-height: 128.5%;
-margin-bottom: 12px;
+		line-height: 128.5%;
+		margin-bottom: 12px;
 	}
-	.calendar__design__subtitle{
+	.calendar__design__subtitle {
 		font-size: 16px;
-line-height: 171%;
-padding-bottom: 40px;
+		line-height: 171%;
+		padding-bottom: 40px;
 	}
-	
 }
 
 @media (max-width: 1023px) {
-	.canedar__wrapper{
+	.canedar__wrapper {
 		width: 648px;
 		height: auto;
 		box-shadow: -4px 4px 15px 2px rgba(234, 236, 255, 0.5);
 		border-radius: 4px;
-	  }
-	  .calendar__design__section{
+	}
+	.calendar__design__section {
 		flex-direction: column-reverse;
 		align-items: center;
 		gap: 24px;
-		/* width:648px; */
-	  } 
-	  .inputs__wrapper{
+	}
+	.inputs__wrapper {
 		flex-direction: row;
 		gap: 16px;
 		width: 648px;
-		
 	}
- .input__wrapper, .input__wrapper__border, .inputs__wrapper{
-	padding: 12px 12px 16px 12px;	
-	height: 66px;
-}
- 
- .calendar__design__wrapper{
-	margin-top: 80px;
-	align-items: center;
-}
-.settings__wrapper{
-	width: 648px;
-	gap:12px
-}
-.styles__wrapper{
-	align-items: center;
-	justify-content: center;
-	gap: 12px
-}
-.radioRange, .skeleton__wrapper{
-	align-items: center;
-	width: 648px;
-	justify-content: center;
-	gap: 12px
-}
-.skeleton__wrapper{
-	gap:20px
-}
-.celandar__design__title{
-	font-size: 24px;
-	line-height: 128.5%;
-	letter-spacing: 1.15833px;
-	margin-bottom: 12px;
-}
-.calendar__design__subtitle{
-	font-size: 16px;
-    line-height: 171%;
-	letter-spacing: 0.15833px;
-	padding-bottom: 24px;
+	.input__wrapper,
+	.input__wrapper__border,
+	.inputs__wrapper {
+		padding: 12px 12px 16px 12px;
+		height: 66px;
+	}
 
-}
+	.calendar__design__wrapper {
+		margin-top: 80px;
+		align-items: center;
+	}
+	.settings__wrapper {
+		width: 648px;
+		gap: 12px;
+	}
+	.styles__wrapper {
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+	}
+	.radioRange,
+	.skeleton__wrapper {
+		align-items: center;
+		width: 648px;
+		justify-content: center;
+		gap: 12px;
+	}
+	.skeleton__wrapper {
+		gap: 20px;
+	}
+	.celandar__design__title {
+		font-size: 24px;
+		line-height: 128.5%;
+		letter-spacing: 1.15833px;
+		margin-bottom: 12px;
+	}
+	.calendar__design__subtitle {
+		font-size: 16px;
+		line-height: 171%;
+		letter-spacing: 0.15833px;
+		padding-bottom: 24px;
+	}
 }
