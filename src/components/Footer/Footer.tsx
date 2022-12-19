@@ -8,8 +8,12 @@ import Instagram from '@/assets/images/Instagram.svg';
 import youtube from '@/assets/images/youtube.svg';
 import logo from '@/assets/images/Logo.svg';
 import ColumnComponent from './ColumnComponent';
-type T_Props = {};
+import classNames from 'classnames';
 
+import { Inter } from '@next/font/google';
+
+type T_Props = {};
+const inter = Inter({ subsets: ['latin'] });
 const Footer: FC<T_Props> = () => {
 	return (
 		<footer className={styles.footer}>
@@ -26,7 +30,7 @@ const Footer: FC<T_Props> = () => {
 			))}
 
 			<div className={styles.social__wrapper}>
-				<h3>FIND US ON SOCIAL MEDIA</h3>
+				<h3 className={classNames(inter.className)}>FIND US ON SOCIAL MEDIA</h3>
 				<div className={styles.social__icon__wrapper}>
 					<Image
 						className={styles.social__icon}
@@ -56,10 +60,6 @@ const Footer: FC<T_Props> = () => {
 					</div>
 					<div>
 						<a href=''>Privacy Policy</a>
-						<a href=''>Help</a>
-					</div>
-					<div>
-						<a href=''>Jobs</a>
 						<a href=''>Help</a>
 					</div>
 				</div>
