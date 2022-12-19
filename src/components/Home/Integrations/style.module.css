@@ -96,6 +96,7 @@
 		font-size: 18px;
 		line-height: 128.5%;
 		width: 100%;
+		text-align: center;
 	}
 
 	.section__image {
@@ -112,6 +113,7 @@
 	}
 
 	.section__text {
+		text-align: center;
 		width: 100%;
 		font-size: 14px;
 		line-height: 26px;

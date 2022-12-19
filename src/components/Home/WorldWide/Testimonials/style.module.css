@@ -317,6 +317,7 @@
 		line-height: 128.5%;
 		margin-top: 21px;
 		font-weight: 600;
+		text-align: center;
 	}
 
 	.section__text__wrapper {
@@ -324,8 +325,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		justify-content: start;
-		align-items: start;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.section__text {
@@ -334,6 +335,7 @@
 		width: 100%;
 		margin: 15px 0px 0px 0px;
 		max-width: 100%;
+		text-align: center;
 	}
 
 	.section__second {

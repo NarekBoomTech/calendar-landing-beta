@@ -32,7 +32,7 @@ const CelebrateComp = () => {
 	return (
 		<div style={{ position: 'relative' }}>
 			<section className={styles.section}>
-				<Shape />
+				{!isMobile && <Shape />}
 
 				<section className={styles.section__first}>
 					<Line />
