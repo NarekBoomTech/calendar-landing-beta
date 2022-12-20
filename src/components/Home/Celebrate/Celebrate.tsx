@@ -37,19 +37,7 @@ const CelebrateComp = () => {
 				<section className={styles.section__first}>
 					<Line />
 
-					{isMobile && (
-						<svg
-							viewBox='0 0 1280 84'
-							fill='none'
-							xmlns='http://www.w3.org/2000/svg'
-							className={styles.aaaaa}
-						>
-							<path
-								d='M0 0C0 0 224 84 640 84C1056 84 1280 0 1280 0V84H0V0Z'
-								fill='white'
-							></path>
-						</svg>
-					)}
+					{isMobile && <Shape />}
 
 					<div className={styles.section__first_container}>
 						<Image
