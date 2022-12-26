@@ -2,7 +2,14 @@
 .section__bottom__text,
 .section__text {
 	margin: 0;
+}
+.section__text{
 	z-index: 1000;
+}
+
+.section__wrapper {
+	position: relative;
+
 }
 
 .section__text, .section__bottom__text {
@@ -20,10 +27,8 @@
 	width: 1280px;
 	line-height: 32px;
 	color: #000000;
-	/* margin: 0; */
 	letter-spacing: 0;
-	margin: 0px auto 60px auto;
-
+	margin: 50px auto 0px auto;
 }
 
 
@@ -43,10 +48,10 @@
 	align-items: center;
 	text-align: center;
 	width: 100%;
-	padding-top: 94px;
 	background: #F4F6F9;
-	height: 766px;
-	margin-bottom: 234px;	
+	height: 674px;
+	padding: 0;
+	padding-top: 95px;
 }
 .section__wave {
 	height: 460px;
@@ -56,18 +61,17 @@
 	z-index: 1;
 }
 .section__image{
-	margin-top: 78px;
-	width: 846px;
-	height: 524px;
+	margin-top: 64px;
 	position: relative;
 	z-index: 1000;
+	width: 846px;
+	height: 524px;
 }
 
 @media (max-width: 1439px) {
 	.section {
 		padding-top: 54px;
-		height: 652px;
-		margin-bottom: 280px;
+		height: 562px;
 	}
 
 	.section__header {
@@ -83,16 +87,15 @@
 		width: 702px;
 		height: 434px;
 		position: relative;
-		z-index: 1000;
 	}
 	.section__bottom__text{
 		width: 944px;
 		line-height: 26px;
 		color: #000000;
 		letter-spacing: 0;
-		margin: 0px auto 0px auto;
-		padding-bottom: 56px;
+		margin: 70px auto 0px auto;
 	}
+	
 	.section__wave {
 	height:386px;
 	top: 170px;
@@ -102,8 +105,7 @@
 @media (max-width: 1023px) {
 	.section {
 		padding-top: 54px;
-		height: 534px;
-		margin-bottom: 230px;
+		height: 442px;
 	}
 
 	.section__header {
@@ -124,9 +126,11 @@
 	}
 	.section__bottom__text{
 		width: 688px;
-		 padding-bottom: 40px; 
+		margin: 70px auto 0px auto;
 	}
-
+	.section__wrapper{
+		margin-bottom: 40px;
+	}
 	.section__wave {
 		height: 230px;
 		top: 150px;
@@ -137,8 +141,7 @@
 @media (max-width: 767px) {
 	.section {
 		padding-top: 28px;
-		height: 330px;
-		margin-bottom: 120px;
+		height: 340px;
 	}
 
 	.section__header {
@@ -159,11 +162,12 @@
 		z-index: 1000;
 	}
 	.section__bottom__text{
-		padding-bottom: 32px; 
-		
 		line-height: 20px;
+		margin: 22px auto 0px auto;
 	}
-
+	.section__wrapper{
+		margin-bottom: 32px;
+	}
 	.section__wave {
 		height: 200px;
 		top: 120px;

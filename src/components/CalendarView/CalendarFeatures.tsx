@@ -14,17 +14,30 @@ type T_Props = {
 	text: string;
 	image: HTMLImageElement;
 	bottomText: string;
+	// imageWidth: string;
+	// imageHeight: string;
+	marginBottom: string
 };
 
 const inter = Inter({ subsets: ['latin'] });
 
-const CalendarFeatures: FC<T_Props> = ({ header, text, image, bottomText }) => {
+const CalendarFeatures: FC<T_Props> = ({
+	header,
+	text,
+	image,
+	bottomText,
+	// imageWidth,
+	// imageHeight,
+	marginBottom
+}) => {
 	const redirect = useRedirect();
 	const device = useDevice();
 	return (
-		<div className={styles.section__wrapper}>
-			<div style={{ position: 'relative' }}>
-				<section className={styles.section}>
+		<section className={styles.section__wrapper}>
+			{/* <div style={{ position: 'relative' }}> */}
+				<section className={styles.section}
+						style={{marginBottom}}
+				>
 					<Image
 						src={BlueWave}
 						alt='Wave'
@@ -37,7 +50,6 @@ const CalendarFeatures: FC<T_Props> = ({ header, text, image, bottomText }) => {
 					<p className={classNames(styles.section__text, inter.className)}>{text}</p>
 
 					<Button
-						
 						skin='dark'
 						size={
 							device === DEVICE_TYPES.mobile
@@ -55,14 +67,19 @@ const CalendarFeatures: FC<T_Props> = ({ header, text, image, bottomText }) => {
 						src={image}
 						alt='Integrations'
 						className={styles.section__image}
+						// style={
+						// 	device === DEVICE_TYPES.desktop
+						// 		? { width: imageWidth, height: imageHeight }
+						// 		: {}
+						// }
 					/>
+					<p className={classNames(styles.section__bottom__text, inter.className)}>
+						{bottomText}
+					</p>
 					<Shape />
 				</section>
-			</div>
-			<p className={classNames(styles.section__bottom__text, inter.className)}>
-				{bottomText}{' '}
-			</p>
-		</div>
+			{/* </div> */}
+		</section>
 	);
 };
 export default CalendarFeatures;

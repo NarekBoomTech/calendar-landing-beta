@@ -60,6 +60,7 @@
 		border-radius: 8px;
 		width: calc(100% - 36px);
 		top: 25px;
+		padding: 16px 16px;
 	}
 
 	.section__header {

@@ -21,6 +21,9 @@ const CalendarViews = () => {
 		<div>
 			<CalendarFeatures
 				image={CalendarViewImage}
+				marginBottom={
+					isMobile ? '310px' : isLaptop ? '390px' : isTablet ? '380px' : '460px'
+				}
 				header={'Calendar Views'}
 				text={
 					'Boom Calendar layouts are 6: Monthly, Agenda, Card, Weekly, Daily, and Map view. We tried to make them for every purpose so they would be handier to use.'
