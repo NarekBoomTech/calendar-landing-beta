@@ -10,7 +10,7 @@ const WorldWide = () => {
 			<Shape />
 			<Testimonials />
 			<Blog />
-			<ManageModal />
+			<ManageModal top='60px' />
 		</section>
 	);
 };

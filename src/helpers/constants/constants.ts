@@ -32,9 +32,12 @@ import Yellow from '@/assets/images/Yellow.svg';
 import Pink from '@/assets/images/Pink.svg';
 import Blue from '@/assets/images/Blue.svg';
 
+
 export const ROUTING_URLS = {
 	support: '/support',
-	pricing: '/pricing'
+	pricing: '/pricing',
+	view: '/view',
+	home: '/'
 };
 
 export const DEVICE_TYPES = {
@@ -152,13 +155,15 @@ export const FEATURES_FIELDS: T_NavigationField[] = [
 		title: 'Calendar Views',
 		description: 'Pick the one you like, we have it all',
 		icon: CalendarIcon,
-		color: '#3E1AAB'
+		color: '#3E1AAB',
+		path: '/calendar-views'
 	},
 	{
 		title: 'Registration',
 		description: "Make sure you don't miss any participant",
 		icon: Registration,
-		color: '#1DCFA9'
+		color: '#1DCFA9',
+		path: '/registration'
 	},
 	{
 		title: 'Ticketing',
@@ -171,7 +176,8 @@ export const FEATURES_FIELDS: T_NavigationField[] = [
 		description:
 			'Save your users from additional work with a subscription that is on a regular basis',
 		icon: Subscription,
-		color: '#F2994A'
+		color: '#F2994A',
+		path: '/subscription'
 	},
 	{
 		title: 'Mobile App',
@@ -202,7 +208,8 @@ export const FEATURES_FIELDS: T_NavigationField[] = [
 		title: 'Your Customization',
 		description: 'Make your workspace comfy for you and for your users',
 		icon: Customization,
-		color: '#56CCF2'
+		color: '#56CCF2',
+		path: '/your-customization'
 	}
 ];
 

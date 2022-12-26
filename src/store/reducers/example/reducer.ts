@@ -18,3 +18,4 @@ export const exampleReducer = (state = initialState, action: T_ExampleActions): 
 			return state;
 	}
 };
+ 

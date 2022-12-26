@@ -9,14 +9,25 @@ import youtube from '@/assets/images/youtube.svg';
 import logo from '@/assets/images/Logo.svg';
 import ColumnComponent from './ColumnComponent';
 import classNames from 'classnames';
-
+import Shape from '@/components/Home/Shape/Shape'
 import { Inter } from '@next/font/google';
+import { useRouter } from 'next/router';
+import { combineClassNames } from 'src/helpers/functions/commons';
 
 type T_Props = {};
 const inter = Inter({ subsets: ['latin'] });
 const Footer: FC<T_Props> = () => {
+	const router = useRouter();
+	const path = router.asPath;
+
 	return (
-		<footer className={styles.footer}>
+		<footer
+			className={combineClassNames([
+				styles.footer,
+				path.substring(1) && styles.footer__with__background
+			])}
+		>
+			{path.substring(1) && <Shape top />}
 			<Image
 				className={styles.footer__logo}
 				src={logo}

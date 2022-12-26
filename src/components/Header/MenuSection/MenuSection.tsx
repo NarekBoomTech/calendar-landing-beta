@@ -7,9 +7,10 @@ import { ROUTING_URLS } from 'src/helpers/constants/constants';
 import Navigation from '@/components/Header/MenuSection/Navigation';
 type T_Props = {
 	isProductSectionOpen: boolean;
+	setProductSectionOpen: (argument: boolean) => void;
 	redirectPage: (url: string | undefined) => void;
 	handleProductSection: () => void;
-	handleMobileMenu?: () => void;
+	handleMobileMenu: () => void;
 	isMobile: boolean;
 	isTablet: boolean;
 };
@@ -18,6 +19,7 @@ const MenuSection: FC<T_Props> = ({
 	isMobile,
 	isTablet,
 	isProductSectionOpen,
+	setProductSectionOpen,
 	redirectPage,
 	handleProductSection,
 	handleMobileMenu
@@ -40,6 +42,8 @@ const MenuSection: FC<T_Props> = ({
 						? styles.header__sections__wrapper__tablet
 						: styles.product__section__opened
 				}
+				onMouseEnter={!isMobile && !isTablet ? handleProductSection : () => null}
+				onMouseLeave={!isMobile && !isTablet ? handleProductSection : () => null}
 			>
 				<li
 					onClick={isMobile || isTablet ? handleProductSection : () => null}
@@ -58,17 +62,21 @@ const MenuSection: FC<T_Props> = ({
 						style={isProductSectionOpen ? { transform: 'rotate(180deg)' } : {}}
 					/>
 				</li>
-				<Navigation
-					isTablet={isTablet}
-					isMobile={isMobile}
-					isProductSectionOpen={isProductSectionOpen}
-				/>
+				{isProductSectionOpen && (
+					<Navigation
+						isTablet={isTablet}
+						isMobile={isMobile}
+						isProductSectionOpen={isProductSectionOpen}
+						setProductSectionOpen={setProductSectionOpen}
+						handleMobileMenu={handleMobileMenu}
+					/>
+				)}
 			</div>
 
 			<li
 				onClick={() => {
 					router.push(ROUTING_URLS.support);
-					handleMobileMenu?.();
+					isMobile && handleMobileMenu?.();
 				}}
 				style={
 					path === ROUTING_URLS.support && !isMobile && !isProductSectionOpen
@@ -82,7 +90,7 @@ const MenuSection: FC<T_Props> = ({
 			<li
 				onClick={() => {
 					router.push(ROUTING_URLS.pricing);
-					handleMobileMenu?.();
+					isMobile && handleMobileMenu?.();
 				}}
 				style={
 					path === ROUTING_URLS.pricing && !isMobile && !isProductSectionOpen

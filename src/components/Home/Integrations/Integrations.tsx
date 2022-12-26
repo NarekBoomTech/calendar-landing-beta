@@ -15,7 +15,7 @@ const Integrations = () => {
 				</h2>
 				<p className={classNames(styles.section__text, inter.className)}>
 					Discover milions of events, get alerts about your favorite artists, teams, plays
-					and more. Plus always secure, effortless ticketing.
+					and more. Plus alway s secure, effortless ticketing.
 				</p>
 			</section>
 

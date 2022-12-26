@@ -34,7 +34,8 @@ const Button: FC<T_ButtonProps> = ({
 			style={{
 				color,
 				width,
-				borderRadius
+				borderRadius,
+				zIndex: '1000'
 			}}
 		>
 			{children}

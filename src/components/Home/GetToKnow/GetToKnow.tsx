@@ -33,7 +33,7 @@ const GetToKnow = () => {
 				Get Started
 			</Button>
 		</section>
-	);
+	); 
 };
 
 export default GetToKnow;

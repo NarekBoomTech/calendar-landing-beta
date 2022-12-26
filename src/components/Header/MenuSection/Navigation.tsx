@@ -7,9 +7,19 @@ type T_Props = {
 	isProductSectionOpen: boolean;
 	isMobile: boolean;
 	isTablet: boolean;
+	setProductSectionOpen: (argument: boolean) => void;
+	handleMobileMenu: () => void
 };
 
-const Navigation: FC<T_Props> = ({ isProductSectionOpen, isMobile, isTablet }) => {
+const Navigation: FC<T_Props> = ({
+	isProductSectionOpen,
+	isMobile,
+	isTablet,
+	setProductSectionOpen,
+	handleMobileMenu
+}) => {
+
+	
 	return (
 		<nav
 			className={
@@ -33,6 +43,9 @@ const Navigation: FC<T_Props> = ({ isProductSectionOpen, isMobile, isTablet }) =
 						<MenuSectionFieldComponent
 							key={key}
 							field={field}
+							setProductSectionOpen={setProductSectionOpen}
+							handleMobileMenu={handleMobileMenu}
+							isMobile={isMobile}
 						/>
 					))}
 				</div>
@@ -45,6 +58,9 @@ const Navigation: FC<T_Props> = ({ isProductSectionOpen, isMobile, isTablet }) =
 						<MenuSectionFieldComponent
 							key={key}
 							field={field}
+							setProductSectionOpen={setProductSectionOpen}
+							handleMobileMenu={handleMobileMenu}
+							isMobile={isMobile}
 						/>
 					))}
 				</div>

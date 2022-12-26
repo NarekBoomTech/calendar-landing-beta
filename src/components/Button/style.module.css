@@ -46,25 +46,28 @@
 .large {
 	font-family: 'Inter';
 	font-weight: 500;
+	height:41px;
 	width: 100%;
+	padding: 12px 36px;
 }
 .medium {
-	width: 144px;
+	width: 175px;
+	height: 50px;
+	padding: 8px 12px;
 	font-size: 16px;
-	line-height: 18px;
-	padding: 0px;
+	line-height: 25px;
 }
 
 .big {
-	width: 191px;
+	width: 211px;
 	padding: 12px 32px;
-	height: 50px;
+	height: 52px;
 	font-size: 18px;
 	line-height: 26px;
 }
 
 .small {
-	padding: 0px;
+	padding: 8px 16px;
 	width: 114px;
 	height: 32px;
 }

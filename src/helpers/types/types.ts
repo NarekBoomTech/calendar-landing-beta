@@ -44,6 +44,7 @@ export type T_NavigationField = {
 	description: string;
 	icon: ImageProps['src'];
 	color: string;
+	path?: string
 };
 
 export type T_RGBA = {

@@ -4,16 +4,20 @@ import { useDevice } from '@/hooks/useDevice';
 import { useRedirect } from '@/hooks/useRedirect';
 import { Inter } from '@next/font/google';
 import classNames from 'classnames';
+import { FC } from 'react';
 import { DEVICE_TYPES } from 'src/helpers/constants/constants';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const ManageModal = () => {
+type T_Props = {
+	top?: string
+}
+const ManageModal:FC<T_Props> = ({top}) => {
 	const redirect = useRedirect();
 	const device = useDevice();
 
 	return (
-		<section className={styles.section}>
+		<section style={{top: top}} className={styles.section}>
 			<h2 className={classNames(styles.section__header, inter.className)}>
 				Manage your event easly with BoomCalendar
 			</h2>

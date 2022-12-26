@@ -6,7 +6,7 @@ import CloseMobileMenu from '@/assets/images/CloseMobileMenu.svg';
 import Image from 'next/image';
 import { useDevice } from '@/hooks/useDevice';
 import { useRouter } from 'next/router';
-import { DEVICE_TYPES } from 'src/helpers/constants/constants';
+import { DEVICE_TYPES, ROUTING_URLS } from 'src/helpers/constants/constants';
 import { FC, useState } from 'react';
 import MobileMenu from '@/components/Header/MobileMenu';
 import MenuSection from '@/components/Header/MenuSection/MenuSection';
@@ -26,6 +26,11 @@ const Header: FC<T_Props> = () => {
 	};
 	const handleProductSection = () => setProductSectionOpen(!isProductSectionOpen);
 	const redirectPage = (url: string | undefined) => router.push(String(url));
+
+	const handleMobileMenuOpen = () => {
+		handleMobileMenu(), setProductSectionOpen(false);
+	}
+	
 	return (
 		<header>
 			{mobileBurgerOpened && (
@@ -36,11 +41,13 @@ const Header: FC<T_Props> = () => {
 					handleMobileMenu={handleMobileMenu}
 					isTablet={isTablet}
 					isMobile={isMobile}
+					setProductSectionOpen={setProductSectionOpen}
 				/>
 			)}
 			<div className={styles.header__wrapper}>
 				<div className={styles.header__left__part}>
 					<Image
+						onClick={() => router.push(ROUTING_URLS.home)}
 						width={device === DEVICE_TYPES.mobile ? 24 : 42}
 						height={device === DEVICE_TYPES.mobile ? 24 : 42}
 						src={Logo}
@@ -55,6 +62,8 @@ const Header: FC<T_Props> = () => {
 							redirectPage={redirectPage}
 							isMobile={isMobile}
 							isTablet={isTablet}
+							setProductSectionOpen={setProductSectionOpen}
+							handleMobileMenu={handleMobileMenu}
 						/>
 					)}
 				</div>
@@ -78,9 +87,7 @@ const Header: FC<T_Props> = () => {
 							height={12}
 							src={mobileBurgerOpened ? CloseMobileMenu : Burger}
 							alt='Picture of the author'
-							onClick={() => {
-								handleMobileMenu(), setProductSectionOpen(false);
-							}}
+							onClick={handleMobileMenuOpen}
 						/>
 					)}
 				</div>

@@ -1,18 +1,30 @@
 import styles from '@/components/Header/MenuSection/MenuSectionField/style.module.css';
-import { useDevice } from '@/hooks/useDevice';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { FC } from 'react';
-import { DEVICE_TYPES } from 'src/helpers/constants/constants';
 
 import { T_NavigationField } from 'src/helpers/types/types';
 
 type T_Props = {
 	field: T_NavigationField;
+	handleMobileMenu: () => void;
+	setProductSectionOpen: (argument: boolean) => void;
+	isMobile: boolean;
 };
 
-const MenuSectionFieldComponent: FC<T_Props> = ({ field }) => {
-	const device = useDevice();
-	const isMobile = device === DEVICE_TYPES.mobile;
+const MenuSectionFieldComponent: FC<T_Props> = ({
+	field,
+	isMobile,
+	setProductSectionOpen,
+	handleMobileMenu
+}) => {
+	const router = useRouter();
+	const redirectPage = () => {
+		router.push(field.path ? field.path : '');
+		setProductSectionOpen(false);
+		isMobile && handleMobileMenu();
+	};
+
 	return (
 		<div
 			className={
@@ -20,6 +32,7 @@ const MenuSectionFieldComponent: FC<T_Props> = ({ field }) => {
 					? styles.menu__section__component__wrapper__mobile
 					: styles.menu__section__component__wrapper
 			}
+			onClick={redirectPage}
 		>
 			<div>
 				<Image

@@ -42,11 +42,12 @@
 
     .header__login__button{
        padding: 36px 16px 36px 16px;
-       color: #162D3D
+       color: #162D3D;
+       width: 90px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header__wrapper{
         height: 52px;
         padding: 10px 20px 10px 14px;
@@ -64,7 +65,7 @@
     margin-top: 52px;
     background: #FFFFFF;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
     height: calc(100% - 52px);
     width: 100%;
     display: flex;

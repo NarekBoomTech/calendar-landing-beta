@@ -7,12 +7,14 @@ type T_Props = {
 	handleProductSection: () => void;
 	isProductSectionOpen: boolean;
 	redirectPage: (url: string | undefined) => void;
+	setProductSectionOpen: (argument: boolean) => void;
 	handleMobileMenu: () => void;
 	isMobile: boolean;
 	isTablet: boolean
+
 };
 
-const MobileMenu: FC<T_Props> = ({ redirectPage, handleProductSection, isProductSectionOpen, handleMobileMenu, isMobile, isTablet }) => {
+const MobileMenu: FC<T_Props> = ({ redirectPage, handleProductSection, isProductSectionOpen, handleMobileMenu, isMobile, isTablet, setProductSectionOpen }) => {
 	return (
 		<div className={styles.mobile_menu}>
 			<MenuSection
@@ -22,6 +24,7 @@ const MobileMenu: FC<T_Props> = ({ redirectPage, handleProductSection, isProduct
 				isTablet={isTablet}
 				isMobile={isMobile}
 				handleMobileMenu={handleMobileMenu}
+				setProductSectionOpen={setProductSectionOpen}
 			/>
 			<div className={styles.button__wrapper}>
 				<Button
