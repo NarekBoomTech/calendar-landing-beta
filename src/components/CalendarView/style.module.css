@@ -9,13 +9,12 @@
 
 .section__wrapper {
 	position: relative;
-
 }
 
 .section__text, .section__bottom__text {
 	color: #162D3D;
 	margin: 24px auto 24px auto;
-	width: 700px;
+	width: 722px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -58,6 +57,7 @@
 	position: absolute;
 	width: 100%;
 	top: 130px;
+	left: 0;
 	z-index: 1;
 }
 .section__image{

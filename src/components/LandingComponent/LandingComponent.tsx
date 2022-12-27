@@ -59,7 +59,7 @@ const LandingComponent: FC<T_Props> = ({
 				<p className={classNames(styles.block__text, inter.className)}>{text}</p>
 			</article>
 		</section>
-	);
+	); 
 };
 
 export default LandingComponent;
