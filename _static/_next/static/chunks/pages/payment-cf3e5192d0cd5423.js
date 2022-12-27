@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[252],{71:function(n,t,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/payment",function(){return u(3457)}])},3457:function(n,t,u){"use strict";u.r(t);var e=u(5893);let _=()=>(0,e.jsx)("div",{children:"Payment"});t.default=_}},function(n){n.O(0,[774,888,179],function(){return n(n.s=71)}),_N_E=n.O()}]);

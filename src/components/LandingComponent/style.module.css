@@ -76,10 +76,10 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding-bottom: 32px;
+        padding: 0px 18px 32px 18px;
     }
     .block__image, .block__article{ 
-        width: 288px;
+        width: 100%;
     }
     
     .block__header {

@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[548],{2349:function(n,e,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/calendar-views",function(){return u(9084)}])},9084:function(n,e,u){"use strict";u.r(e);var i=u(5893);let _=()=>(0,i.jsx)("div",{children:"CalendarViews"});e.default=_}},function(n){n.O(0,[774,888,179],function(){return n(n.s=2349)}),_N_E=n.O()}]);
